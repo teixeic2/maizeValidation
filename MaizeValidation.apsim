@@ -2085,7 +2085,7 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
       </Graph>
       <Graph name="LeafNo">
         <Legend>
-          <CheckedTitles>Simulated, leaf_no,01-2010-LINC-MAIZ-MODE NilN</CheckedTitles>
+          <CheckedTitles>Simulated, leaf_no,01-2010-LINC-MAIZ-MODE MedN</CheckedTitles>
           <CheckedTitles>Observed, LeafLigules,Obs(TipsLigules)</CheckedTitles>
           <CheckedTitles>Observed, LeafLigules,Obs(TipsLigules)</CheckedTitles>
           <CheckedTitles>Observed, LeafTips,Obs(TipsLigules)</CheckedTitles>
@@ -9336,7 +9336,7 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
       </Graph>
       <Graph name="LeafNo">
         <Legend>
-          <CheckedTitles>Simulated, leaf_no,15-2010-HAWK-MAIZ-HYBR 33M54-LateSow</CheckedTitles>
+          <CheckedTitles>Simulated, leaf_no,15-2010-HAWK-MAIZ-HYBR 39V43-LateSow</CheckedTitles>
           <CheckedTitles>Observed, LeafLigules,Obs(LeafLigules)</CheckedTitles>
           <CheckedTitles>Observed, LeafLigules,Obs(LeafLigules)</CheckedTitles>
           <CheckedTitles>Observed, LeafLigules,Obs(LeafTips)</CheckedTitles>
@@ -9373,7 +9373,7 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
       </Graph>
       <Graph name="Phenology">
         <Legend>
-          <CheckedTitles>Simulated, stage_code,15-2010-HAWK-MAIZ-HYBR 39V43-EarlySow</CheckedTitles>
+          <CheckedTitles>Simulated, stage_code,15-2010-HAWK-MAIZ-HYBR 39V43-LateSow</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(Emerge)</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(Silk)</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(Silk)</CheckedTitles>
@@ -14269,7 +14269,7 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
       </Graph>
       <Graph name="LeafNo">
         <Legend>
-          <CheckedTitles>Simulated, leaf_no,06-2008-LINC-MAIZ-SHYB 39D34</CheckedTitles>
+          <CheckedTitles>Simulated, leaf_no,06-2008-LINC-MAIZ-SHYB 39V43</CheckedTitles>
           <CheckedTitles>Observed, LeafLigules,Obs(TipsLigules)</CheckedTitles>
           <CheckedTitles>Observed, LeafLigules,Obs(TipsLigules)</CheckedTitles>
           <CheckedTitles>Observed, LeafTips,Obs(TipsLigules)</CheckedTitles>
@@ -14303,7 +14303,7 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
       </Graph>
       <Graph name="Phenology">
         <Legend>
-          <CheckedTitles>Simulated, stage_code,06-2008-LINC-MAIZ-SHYB 39G12</CheckedTitles>
+          <CheckedTitles>Simulated, stage_code,06-2008-LINC-MAIZ-SHYB 39V43</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(Emerge)</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(Silk)</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(Silk)</CheckedTitles>
