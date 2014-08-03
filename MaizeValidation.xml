@@ -1529,7 +1529,7 @@
       <spla_prod_coef units="1/oC" description="curvature coefficient for leaf area">0.010</spla_prod_coef>
       <!--  senescence function
          -->
-      <spla_intercept units="oC" description="intercept of regression for calculating">-321.0</spla_intercept>		
+      <spla_intercept units="oC" description="intercept of a regression for calculating">-321.0</spla_intercept>		
 	</Pioneer_39G12>
 	<Pioneer_39V43 cultivar="yes">
 	<!-- NZ hybrid eit -->
