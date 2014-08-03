@@ -15997,7 +15997,7 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
       </Graph>
       <Graph name="Phenology">
         <Legend>
-          <CheckedTitles>Simulated, stage_code,10-2009-HAWK-MAIZ-PHEN N51-N4-EarlySow</CheckedTitles>
+          <CheckedTitles>Simulated, stage_code,10-2009-HAWK-MAIZ-PHEN DK624-EarlySow</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(Emerge)</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(Silk)</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(Silk)</CheckedTitles>

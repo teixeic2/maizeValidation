@@ -1637,7 +1637,7 @@
 	<!-- NZ hybrid eit -->
 	<head_grain_no_max description="750 ! 650 ()">850 </head_grain_no_max>
       <grain_gth_rate description="9.17 (mg/grain/day)">8.0 </grain_gth_rate>
-      <tt_emerg_to_endjuv units="oC">90</tt_emerg_to_endjuv>
+      <tt_emerg_to_endjuv units="oC">150</tt_emerg_to_endjuv>
       <est_days_endjuv_to_init>20</est_days_endjuv_to_init>
       <tt_endjuv_to_init units="oC">0</tt_endjuv_to_init>
       <photoperiod_crit1 units="hours">12.5</photoperiod_crit1>
@@ -1671,7 +1671,7 @@
 	<!-- NZ hybrid eit -->
 	<head_grain_no_max description="750 ! 650 ()">850 </head_grain_no_max>
       <grain_gth_rate description="9.17 (mg/grain/day)">8.0 </grain_gth_rate>
-      <tt_emerg_to_endjuv units="oC">90</tt_emerg_to_endjuv>
+      <tt_emerg_to_endjuv units="oC">100</tt_emerg_to_endjuv>
       <est_days_endjuv_to_init>20</est_days_endjuv_to_init>
       <tt_endjuv_to_init units="oC">0</tt_endjuv_to_init>
       <photoperiod_crit1 units="hours">12.5</photoperiod_crit1>
