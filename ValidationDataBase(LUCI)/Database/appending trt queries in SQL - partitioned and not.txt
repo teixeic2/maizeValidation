@@ -1,0 +1,53 @@
+WITH summary AS (
+
+	SELECT  fot1.FieldObservationID AS id, 
+		fot1.TreatmentID AS treatment1,  
+		fot2.TreatmentID AS treatment2,  
+		fot3.TreatmentID AS treatment3,  
+		fot4.TreatmentID AS treatment4,
+		dbo.FieldObservation.Date,
+		dbo.FieldObservation.MeasuredValue,
+		dbo.FieldObservation.ErrorValue,
+		dbo.FieldObservation.MeasuredVariableID,
+		dbo.FieldObservation.ExperimentCropVarietyID,
+	ROW_NUMBER() OVER(PARTITION BY fot1.FieldObservationID ORDER BY fot1.TreatmentID)AS rk
+	FROM dbo.FieldObservation
+		JOIN (dbo.FieldObservationTreatment AS fot4 
+		JOIN (dbo.FieldObservationTreatment AS fot3 
+		JOIN (dbo.FieldObservationTreatment AS fot1 
+		JOIN dbo.FieldObservationTreatment AS fot2 
+	ON fot1.FieldObservationID = fot2.FieldObservationID AND fot1.TreatmentID <> fot2.TreatmentID)
+	ON fot1.FieldObservationID=fot3.FieldObservationID AND fot1.TreatmentID <> fot3.TreatmentID AND fot2.TreatmentID<>fot3.TreatmentID) 
+	ON fot1.FieldObservationID=fot4.FieldObservationID AND fot4.TreatmentID <> fot1.TreatmentID AND fot4.TreatmentID<>fot2.TreatmentID and fot4.TreatmentID <> fot3.TreatmentID)
+	ON FieldObservation.ID=fot1.FieldObservationID
+	WHERE (((fot1.FieldObservationID)>=2842 And (fot1.FieldObservationID)<=2857)))
+
+SELECT s.*
+FROM summary s
+WHERE s.rk = 1;
+
+--------------------------------------
+without partitioning
+
+
+	SELECT  fot1.FieldObservationID AS id, 
+		fot1.TreatmentID AS treatment1,  
+		fot2.TreatmentID AS treatment2,  
+		fot3.TreatmentID AS treatment3,  
+		fot4.TreatmentID AS treatment4,
+		dbo.FieldObservation.Date,
+		dbo.FieldObservation.MeasuredValue,
+		dbo.FieldObservation.ErrorValue,
+		dbo.FieldObservation.MeasuredVariableID,
+		dbo.FieldObservation.ExperimentCropVarietyID
+
+	FROM dbo.FieldObservation
+		JOIN (dbo.FieldObservationTreatment AS fot4 
+		JOIN (dbo.FieldObservationTreatment AS fot3 
+		JOIN (dbo.FieldObservationTreatment AS fot1 
+		JOIN dbo.FieldObservationTreatment AS fot2 
+	ON fot1.FieldObservationID = fot2.FieldObservationID AND fot1.TreatmentID <> fot2.TreatmentID)
+	ON fot1.FieldObservationID=fot3.FieldObservationID AND fot1.TreatmentID <> fot3.TreatmentID AND fot2.TreatmentID<>fot3.TreatmentID) 
+	ON fot1.FieldObservationID=fot4.FieldObservationID AND fot4.TreatmentID <> fot1.TreatmentID AND fot4.TreatmentID<>fot2.TreatmentID and fot4.TreatmentID <> fot3.TreatmentID)
+	ON FieldObservation.ID=fot1.FieldObservationID
+	WHERE (((fot1.FieldObservationID)>=2842 And (fot1.FieldObservationID)<=2857))

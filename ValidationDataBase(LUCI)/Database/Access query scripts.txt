@@ -1,0 +1,157 @@
+SELECT [dbo_SiteDescription].[ID],[dbo_Location].[Location],[dbo_SiteDescription].[SiteName]
+
+FROM [dbo_Location] INNER JOIN [dbo_SiteDescription] ON [dbo_Location].[ID]=[dbo_SiteDescription].[LocationID]
+
+ORDER BY [dbo_Location].[Location], [dbo_SiteDescription].[SiteName];
+
+
+
+
+
+SELECT dbo_SiteDescription.ID, dbo_Location.Location, dbo_SiteDescription.SiteName 
+FROM dbo_Location INNER JOIN dbo_SiteDescription ON dbo_Location.ID=dbo_SiteDescription.LocationID 
+ORDER BY dbo_Location.Location, dbo_SiteDescription.SiteName; 
+
+
+
+
+
+SELECT [dbo_CropVariety].[CropSpeciesID],[dbo_CropSpecies].[CropSpecies],[dbo_CropVariety].[CropVariety]
+FROM [dbo_CropSpecies] INNER JOIN [dbo_CropVariety] ON [dbo_CropSpecies].[ID]=[dbo_CropVariety].[CropSpeciesID]
+ORDER BY [dbo_CropSpecies].[CropSpecies], [dbo_CropVariety].[CropVariety]
+
+
+
+SELECT [dbo_CropSpecies].[ID], [dbo_CropSpecies].[CropSpecies] 
+FROM dbo_CropSpecies 
+ORDER BY [CropSpecies]; 
+
+
+
+
+
+SELECT [dbo_CropSpecies].[ID], [dbo_CropSpecies].[CropSpecies] 
+FROM dbo_CropSpecies ORDER BY [CropSpecies]; 
+
+
+
+25Nov ExpCrop form
+incorrect:
+SELECT [dbo_ExperimentCrop].[ID], [dbo_ExperimentCrop].[ExperimentID] FROM dbo_ExperimentCrop; 
+
+incorrect:
+SELECT dbo_ExperimentCrop.ExperimentID, dbo_Experiment.Name 
+FROM dbo_Experiment 
+INNER JOIN (dbo_CropSpecies 
+INNER JOIN (dbo_CropVariety 
+INNER JOIN dbo_ExperimentCrop 
+ON dbo_CropVariety.ID=dbo_ExperimentCrop.CropVarietyID) 
+ON dbo_CropSpecies.ID=dbo_CropVariety.CropSpeciesID) 
+ON dbo_Experiment.ID=dbo_ExperimentCrop.ExperimentID;
+
+incorrect:
+SELECT dbo_ExperimentCrop.ID, dbo_ExperimentCrop.ExperimentID, dbo_Experiment.Name 
+FROM dbo_Experiment 
+INNER JOIN (dbo_CropSpecies 
+INNER JOIN (dbo_CropVariety 
+INNER JOIN dbo_ExperimentCrop 
+ON dbo_CropVariety.ID=dbo_ExperimentCrop.CropVarietyID) 
+ON dbo_CropSpecies.ID=dbo_CropVariety.CropSpeciesID) 
+ON dbo_Experiment.ID=dbo_ExperimentCrop.ExperimentID; 
+
+fills in boxes correctly:
+SELECT dbo_ExperimentCrop.ID, dbo_Experiment.Name 
+FROM dbo_Experiment 
+INNER JOIN (dbo_CropSpecies 
+INNER JOIN (dbo_CropVariety 
+INNER JOIN dbo_ExperimentCrop 
+ON dbo_CropVariety.ID=dbo_ExperimentCrop.CropVarietyID) 
+ON dbo_CropSpecies.ID=dbo_CropVariety.CropSpeciesID) 
+ON dbo_Experiment.ID=dbo_ExperimentCrop.ExperimentID; 
+
+but should I be using Experiment dbo instead of ExperimentCrop so I can get the Spp and Varieties out (currently not directly linked)???
+
+
+ann's one:
+SELECT dbo_Experiment.ID, dbo_Experiment.Name FROM dbo_Experiment; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SELECT [dbo_Experiment].[ID], [dbo_Experiment].[Name] FROM dbo_Experiment;
+
+
+error in ExpTreatment form with combobox macro, dbo_ExperimentTreatment : Combo6 : AfterUpdate : Embedded Macro:
+SearchForRecord
+2, dbo_Treatment subform, First, ="[ID] = " & Str(Nz([Screen].[ActiveControl],0))
+
+
+
+
+SELECT [dbo_Experiment].[ID], [dbo_Experiment].[Name] FROM dbo_Experiment; 
+SELECT dbo_Experiment.ID, dbo_Experiment.Name FROM dbo_Experiment ORDER BY dbo_Experiment.Name; 
+
+SELECT [dbo_Experiment].[ID], [dbo_Experiment].[Name] FROM [dbo_Experiment] ORDER BY [dbo_Experiment].[Name]; 
+
+
+
+SELECT [dbo_Experiment].[ID], [dbo_Experiment].[Name] FROM dbo_Experiment ORDER BY [Name]; 
+SELECT [dbo_Experiment].[ID], [dbo_Experiment].[Name] FROM dbo_Experiment ORDER BY [Name]; 
+
+
+
+
+SELECT dbo_DiaryEntry.*, dbo_Experiment.Name, dbo_Event.EventName 
+FROM dbo_Event 
+INNER JOIN (dbo_Experiment 
+INNER JOIN dbo_DiaryEntry 
+ON dbo_Experiment.ID=dbo_DiaryEntry.ExperimentID) 
+ON dbo_Event.ID=dbo_DiaryEntry.EventID; 
+
+
+
+
+SELECT [dbo_SiteDescription].[ID], [dbo_Location].[Location], [dbo_SiteDescription].[SiteName] 
+FROM dbo_Location
+INNER JOIN dbo_SiteDescription 
+ON [dbo_Location].[ID]=[dbo_SiteDescription].[LocationID]
+ORDER BY [dbo_Location].[Location], [dbo_SiteDescription].[SiteName]; 
+
+SELECT [dbo_SiteDescription].[ID], [dbo_Location].[Location], [dbo_SiteDescription].[SiteName] 
+FROM dbo_Location 
+INNER JOIN dbo_SiteDescription 
+ON [dbo_Location].[ID]=[dbo_SiteDescription].[LocationID] 
+ORDER BY [dbo_Location].[Location], [dbo_SiteDescription].[SiteName]; 
+
+
+
+
+
+SELECT [dbo_CropSpecies].[ID], [dbo_CropSpecies].[CropSpecies] 
+FROM dbo_CropSpecies 
+ORDER BY [CropSpecies]; 
+
+SELECT [dbo_CropVariety].[ID], [dbo_CropVariety].[CropVariety] 
+FROM dbo_CropVariety 
+ORDER BY [CropVariety]; 
+
+
+SELECT [dbo_CropVariety].[ID], [dbo_CropVariety].[CropVariety], [dbo_CropSpecies].[CropSpecies]
+FROM dbo_CropSpecies
+INNER JOIN dbo_CropVariety
+ON [dbo_CropSpecies].[ID]=[dbo_CropVariety].[CropSpeciesID]
+ORDER BY [dbo_CropVariety].[CropVariety];
+
+
+

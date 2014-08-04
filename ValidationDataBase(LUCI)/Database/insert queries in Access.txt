@@ -1,0 +1,14 @@
+------------------------------------
+writing query into Access - eg another way to add in entries
+
+
+INSERT INTO dbo_Experiment(Name,StartDate,EndDate,ExperimentManagerID,SiteID,Notes,DataOwner,FreedomToUseData) values('TestSQL','1-Nov-13','13-Nov-13',6,7,'Notes I might need','Ellen','YES');
+
+
+
+
+---------------------
+basic version
+
+
+INSERT INTO dbo_Experiment(put in here expt table field names, with , between) values('text', comma delimited values);

@@ -1,0 +1,12 @@
+!Title = 06-2008-LINC-MAIZ-SHYB           
+Variety Date LeafDM LeafDMerror StemDM StemDMerror RachisHuskDM RachisHuskDMerror GrainDM GrainDMerror AboveDM AboveDMerror
+() () (kg/ha) (stdev) (kg/ha) (stdev) (kg/ha) (stdev) (kg/ha) (stdev) (kg/ha) (stdev)
+39G12 7/01/2009 * * * * * * * * 2365 374
+39V43 7/01/2009 * * * * * * * * 2093 252
+39D34 7/01/2009 * * * * * * * * 2490 460
+39G12 30/01/2009 * * * * * * * * 9673 949
+39V43 30/01/2009 * * * * * * * * 7785 1938
+39D34 30/01/2009 * * * * * * * * 8093 1081
+39G12 3/04/2009 2590 307 6607 264 2140 129 10913 504 22250 1153
+39V43 3/04/2009 2142 58 5636 193 1911 50 11884 493 21574 639
+39D34 3/04/2009 2419 117 6492 991 2111 140 11206 727 22227 246

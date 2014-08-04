@@ -1,0 +1,6 @@
+!Title = 06-2008-LINC-MAIZ-SHYB   
+Variety Date LAI LAIerror
+() () (m2/m2) (stdev)
+39D34 28/01/2009 4.32 0.56
+39G12 28/01/2009 5.21 0.16
+39V43 28/01/2009 3.59 0.34

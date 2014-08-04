@@ -1,0 +1,1 @@
+This folder has been created from original data that Mike George started putting together @ K:\CPDiary\Data\Maize Model 2010-2012 Lincoln\Converting old data sets

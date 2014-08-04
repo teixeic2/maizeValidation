@@ -1,0 +1,9 @@
+!Title = 01-2010-LINC-MAIZ-MODE   
+NitrogenTreat Date LAI LAIerror
+() () (m2/m2) (stdev)
+Med 2/12/2010 0.32 0.05
+Med 30/12/2010 1.98 0.39
+Med 13/01/2011 3.14 0.46
+Nil 2/12/2010 0.32 0.04
+Nil 30/12/2010 2.03 0.14
+Nil 13/01/2011 3.32 0.40
