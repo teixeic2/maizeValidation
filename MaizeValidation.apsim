@@ -3561,11 +3561,11 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
             <action>maize sow plants = 12, sowing_depth = 50, cultivar = Pioneer_39G12, row_spacing = 710, crop_class = plant</action>
           </operation>
           <operation condition="start_of_day">
-            <date>10/04/2011</date>
+            <date>14/04/2013</date>
             <action>maize harvest height = 0.1 (mm)</action>
           </operation>
           <operation condition="start_of_day">
-            <date>10/04/2011</date>
+            <date>14/04/2013</date>
             <action>maize end_crop</action>
           </operation>
           <operation condition="start_of_day">
@@ -3987,7 +3987,7 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
       </Graph>
       <Graph name="LeafNo">
         <Legend>
-          <CheckedTitles>Simulated, leaf_no,23-2012-LINC-MAIZ-RAIN MedN-IrrigFullW</CheckedTitles>
+          <CheckedTitles>Simulated, leaf_no,23-2012-LINC-MAIZ-RAIN NilN-IrrigFullW</CheckedTitles>
           <CheckedTitles>Observed, LeafLigules,Obs(TipsLigules)</CheckedTitles>
           <CheckedTitles>Observed, LeafLigules,Obs(TipsLigules)</CheckedTitles>
           <CheckedTitles>Observed, LeafTips,Obs(TipsLigules)</CheckedTitles>
@@ -4021,7 +4021,7 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
       </Graph>
       <Graph name="Phenology">
         <Legend>
-          <CheckedTitles>Simulated, stage_code,23-2012-LINC-MAIZ-RAIN MedN-IrrigFullW</CheckedTitles>
+          <CheckedTitles>Simulated, stage_code,23-2012-LINC-MAIZ-RAIN NilN-IrrigFullW</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(TasselSilk)</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(TasselSilk)</CheckedTitles>
           <CheckedTitles>Observed, Tassel,Obs(TasselSilk)</CheckedTitles>
@@ -9375,7 +9375,7 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
       </Graph>
       <Graph name="Phenology">
         <Legend>
-          <CheckedTitles>Simulated, stage_code,15-2010-HAWK-MAIZ-HYBR 39V43-LateSow</CheckedTitles>
+          <CheckedTitles>Simulated, stage_code,15-2010-HAWK-MAIZ-HYBR 33M54-LateSow</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(Emerge)</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(Silk)</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(Silk)</CheckedTitles>
@@ -10984,11 +10984,11 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
             <action>maize sow plants =12, sowing_depth = 80, cultivar = Pioneer_33M54, row_spacing = 760, crop_class = plant</action>
           </operation>
           <operation condition="start_of_day">
-            <date>25/05/2011</date>
+            <date>20/05/2011</date>
             <action>maize harvest height = 0.1 (mm)</action>
           </operation>
           <operation condition="start_of_day">
-            <date>25/05/2011</date>
+            <date>20/05/2011</date>
             <action>maize end_crop</action>
           </operation>
           <operation condition="start_of_day">
@@ -11259,6 +11259,7 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
         <State>Canterbury</State>
         <Latitude>999999</Latitude>
         <Longitude>999999</Longitude>
+        <YearOfSampling>0</YearOfSampling>
         <DataSource>Profile descriptions provided by Trevor Webb and data for functional horizions based on SWAMP project results</DataSource>
         <InitialWater name="Initial water">
           <FractionFull>0.8</FractionFull>
@@ -14742,11 +14743,13 @@ Phenology
 EAH added observed data and filters for all treatment levels, and treatment/variable info into memo --&gt; still to finish............</memo>
     <area name="36H36-EarlySow">
       <Soil name="paparoa_silt_loam">
-        <SoilType description="Soil description">lignin_FOM</SoilType>
+        <RecordNumber>0</RecordNumber>
+        <SoilType>lignin_FOM</SoilType>
         <Region>Generic soil types</Region>
         <State>Canterbury</State>
         <Latitude>999999</Latitude>
         <Longitude>999999</Longitude>
+        <YearOfSampling>0</YearOfSampling>
         <DataSource>Profile descriptions provided by Trevor Webb and data for functional horizions based on SWAMP project results</DataSource>
         <InitialWater name="Initial water">
           <FractionFull>1</FractionFull>
@@ -15905,7 +15908,6 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
       </maize>
       <Graph name="Biomass">
         <Legend>
-          <CheckedTitles>Simulated, 10-2009-HAWK-MAIZ-PHEN N51-N4-LateSow</CheckedTitles>
           <CheckedTitles>Observed, Obs(Biomass-Grain)</CheckedTitles>
           <CheckedTitles>Observed, Obs(Biomass-Grain)</CheckedTitles>
         </Legend>
@@ -22757,7 +22759,7 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
         <operations name="sow_harvest">
           <operation condition="start_of_day">
             <date>31/10/2006</date>
-            <action>maize sow plants =11.3, sowing_depth = 50, cultivar = Pioneer_39V43, row_spacing = 760, crop_class = plant</action>
+            <action>maize sow plants =11.3, sowing_depth = 50, cultivar = Prinz, row_spacing = 760, crop_class = plant</action>
           </operation>
           <operation condition="start_of_day">
             <date>12/04/2007</date>

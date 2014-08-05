@@ -1701,6 +1701,40 @@
          -->
       <spla_intercept units="oC" description="intercept of regression for calculating">-321.0</spla_intercept>		
 	</N51-N4>
+	<Prinz cultivar="yes">
+	<!-- NZ hybrid eit -->
+	<head_grain_no_max description="750 ! 650 ()">850 </head_grain_no_max>
+      <grain_gth_rate description="9.17 (mg/grain/day)">8.0 </grain_gth_rate>
+      <tt_emerg_to_endjuv units="oC">150</tt_emerg_to_endjuv>
+      <est_days_endjuv_to_init>20</est_days_endjuv_to_init>
+      <tt_endjuv_to_init units="oC">0</tt_endjuv_to_init>
+      <photoperiod_crit1 units="hours">12.5</photoperiod_crit1>
+      <photoperiod_crit2 units="hours">20.0</photoperiod_crit2>
+      <photoperiod_slope>0.0</photoperiod_slope>
+      <tt_flower_to_maturity>702</tt_flower_to_maturity>
+      <tt_flag_to_flower>44</tt_flag_to_flower>
+      <tt_flower_to_start_grain units="oC">120</tt_flower_to_start_grain>
+      <tt_maturity_to_ripe units="oC">1</tt_maturity_to_ripe>
+      <x_stem_wt units="g/stem" description="look up table for canopy height">0    80</x_stem_wt>
+      <y_height units="mm" description="plant canopy height">0  2000</y_height>
+      <!--  *** Variety parameters not used **************
+         **********************************************
+         -->
+      <hi_incr units="1/days">0.018</hi_incr>
+      <hi_max_pot units="g/g">0.55</hi_max_pot>
+      <pp_endjuv_to_init description="not used">0</pp_endjuv_to_init>
+      <main_stem_coef>2.88</main_stem_coef>
+      <tpla_prod_coef units="1/oC" description="curvature coefficient for leaf area">0.015</tpla_prod_coef>
+      <!--  production function
+         -->
+      <tpla_inflection units="oC" description="inflection point of leaf area production">404.8</tpla_inflection>
+      <!--  function
+         -->
+      <spla_prod_coef units="1/oC" description="curvature coefficient for leaf area">0.010</spla_prod_coef>
+      <!--  senescence function
+         -->
+      <spla_intercept units="oC" description="intercept of regression for calculating">-321.0</spla_intercept>		
+	</Prinz>
 	<Pioneer_34K77 cultivar="yes">
 	<!-- NZ hybrid eit -->
 	<head_grain_no_max description="750 ! 650 ()">850 </head_grain_no_max>
