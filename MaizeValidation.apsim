@@ -12976,6 +12976,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 3
+TreatNo = 1</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="38H20-Plastic" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/paparoa_silt_loam">
@@ -13123,6 +13140,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 3
+TreatNo = 2</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="39G12-Bare" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/paparoa_silt_loam">
@@ -13270,6 +13304,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 3
+TreatNo = 3</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="39G12-Plastic" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/paparoa_silt_loam">
@@ -13417,6 +13468,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 3
+TreatNo = 4</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
   </simulation>
   <simulation name="06-2008-LINC-MAIZ-SHYB">
@@ -14797,6 +14865,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 6
+TreatNo = 2</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="39G12" shortcut="/Simulations/06-2008-LINC-MAIZ-SHYB/39V43">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/06-2008-LINC-MAIZ-SHYB/39V43/paparoa_silt_loam">
@@ -14958,6 +15043,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 6
+TreatNo = 1</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="39D34" shortcut="/Simulations/06-2008-LINC-MAIZ-SHYB/39V43">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/06-2008-LINC-MAIZ-SHYB/39V43/paparoa_silt_loam">
@@ -15119,6 +15221,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 6
+TreatNo = 3</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
   </simulation>
   <simulation name="10-2009-HAWK-MAIZ-PHEN">
@@ -16394,7 +16513,7 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
       </Graph>
       <Graph name="LeafNo">
         <Legend>
-          <CheckedTitles>Simulated, leaf_no,10-2009-HAWK-MAIZ-PHEN 36H36-EarlySow</CheckedTitles>
+          <CheckedTitles>Simulated, leaf_no,10-2009-HAWK-MAIZ-PHEN 36H36-LateSow</CheckedTitles>
           <CheckedTitles>Observed, LeafLigules,Obs(Ligules)</CheckedTitles>
           <CheckedTitles>Observed, LeafLigules,Obs(Ligules)</CheckedTitles>
         </Legend>
@@ -16425,7 +16544,7 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
       </Graph>
       <Graph name="Phenology">
         <Legend>
-          <CheckedTitles>Simulated, stage_code,10-2009-HAWK-MAIZ-PHEN 36H36-LateSow</CheckedTitles>
+          <CheckedTitles>Simulated, stage_code,10-2009-HAWK-MAIZ-PHEN 36H36-EarlySow</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(Emerge)</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(Silk)</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(Silk)</CheckedTitles>
@@ -16460,6 +16579,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 10
+TreatNo = 1</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="36H36-LateSow" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/paparoa_silt_loam">
@@ -16608,6 +16744,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 10
+TreatNo = 2</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="38P05-EarlySow" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/paparoa_silt_loam">
@@ -16756,6 +16909,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 10
+TreatNo = 3</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="38P05-LateSow" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/paparoa_silt_loam">
@@ -16904,6 +17074,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 10
+TreatNo = 4</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="39G12-EarlySow" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/paparoa_silt_loam">
@@ -17052,6 +17239,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 10
+TreatNo = 5</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="39G12-LateSow" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/paparoa_silt_loam">
@@ -17200,6 +17404,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 10
+TreatNo = 6</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="DK624-EarlySow" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/paparoa_silt_loam">
@@ -17348,6 +17569,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 10
+TreatNo = 7</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="DK624-LateSow" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/paparoa_silt_loam">
@@ -17496,6 +17734,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 10
+TreatNo = 8</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="N51-N4-EarlySow" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/paparoa_silt_loam">
@@ -17644,6 +17899,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 10
+TreatNo = 9</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="N51-N4-LateSow" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/paparoa_silt_loam">
@@ -17788,6 +18060,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 10
+TreatNo = 10</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
   </simulation>
   <simulation name="18-1990-LINC-MAIZ-RAIN">
@@ -19059,6 +19348,23 @@ Note that experiment info has been taken from an old simulation set up by Hamish
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 18
+TreatNo = 1</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="Irrig1W" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/paparoa_silt_loam">
@@ -19213,6 +19519,23 @@ Note that experiment info has been taken from an old simulation set up by Hamish
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 18
+TreatNo = 2</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="Irrig2W" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/paparoa_silt_loam">
@@ -19367,6 +19690,23 @@ Note that experiment info has been taken from an old simulation set up by Hamish
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 18
+TreatNo = 3</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="Irrig3W" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/paparoa_silt_loam">
@@ -19521,6 +19861,23 @@ Note that experiment info has been taken from an old simulation set up by Hamish
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 18
+TreatNo = 4</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="Irrig4W" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/paparoa_silt_loam">
@@ -19670,6 +20027,23 @@ Note that experiment info has been taken from an old simulation set up by Hamish
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 18
+TreatNo = 5</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="Irrig5W" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/paparoa_silt_loam">
@@ -19824,6 +20198,23 @@ Note that experiment info has been taken from an old simulation set up by Hamish
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 18
+TreatNo = 6</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="Irrig6W" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/paparoa_silt_loam">
@@ -19978,6 +20369,23 @@ Note that experiment info has been taken from an old simulation set up by Hamish
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 18
+TreatNo = 7</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="Irrig7W" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/paparoa_silt_loam">
@@ -20127,6 +20535,23 @@ Note that experiment info has been taken from an old simulation set up by Hamish
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 18
+TreatNo = 8</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="Irrig8W" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/paparoa_silt_loam">
@@ -20276,6 +20701,23 @@ Note that experiment info has been taken from an old simulation set up by Hamish
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 18
+TreatNo = 9</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="Irrig9W" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/paparoa_silt_loam">
@@ -20430,6 +20872,23 @@ Note that experiment info has been taken from an old simulation set up by Hamish
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 18
+TreatNo = 10</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
   </simulation>
   <simulation name="24-2011-LINC-MAIZ-P21N">
@@ -21751,6 +22210,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 24
+TreatNo = 1</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="VLowN" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/paparoa_silt_loam">
@@ -21881,6 +22357,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 24
+TreatNo = 2</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="LowN" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/paparoa_silt_loam">
@@ -22011,6 +22504,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 24
+TreatNo = 3</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="MedN" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/paparoa_silt_loam">
@@ -22141,6 +22651,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 24
+TreatNo = 4</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="VHighN" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/paparoa_silt_loam">
@@ -22284,6 +22811,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 24
+TreatNo = 5</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
   </simulation>
   <simulation name="22-2006-CHER-MAIZ-NITR">
@@ -23582,6 +24126,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 22
+TreatNo = 1</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="LowN" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/paparoa_silt_loam">
@@ -23649,6 +24210,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 22
+TreatNo = 2</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="MedN" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/paparoa_silt_loam">
@@ -23794,6 +24372,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 22
+TreatNo = 3</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
     <area name="HighN" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/paparoa_silt_loam">
@@ -23939,6 +24534,23 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </GDFilter>
         </Plot>
       </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 22
+TreatNo = 4</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
     </area>
   </simulation>
 </folder>
