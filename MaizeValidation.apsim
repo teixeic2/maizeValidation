@@ -9581,7 +9581,7 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
       </Graph>
       <Graph name="LAI">
         <Legend>
-          <CheckedTitles>Simulated, 15-2010-HAWK-MAIZ-HYBR 33M54-LateSow</CheckedTitles>
+          <CheckedTitles>Simulated, 15-2010-HAWK-MAIZ-HYBR 38H20-EarlySow</CheckedTitles>
           <CheckedTitles>Observed, Obs(LAI)</CheckedTitles>
           <CheckedTitles>Observed, Obs(LAI)</CheckedTitles>
         </Legend>
@@ -9611,7 +9611,7 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
       </Graph>
       <Graph name="LeafNo">
         <Legend>
-          <CheckedTitles>Simulated, leaf_no,15-2010-HAWK-MAIZ-HYBR 33M54-LateSow</CheckedTitles>
+          <CheckedTitles>Simulated, leaf_no,15-2010-HAWK-MAIZ-HYBR 38H20-MidSow</CheckedTitles>
           <CheckedTitles>Observed, LeafLigules,Obs(LeafLigules)</CheckedTitles>
           <CheckedTitles>Observed, LeafLigules,Obs(LeafLigules)</CheckedTitles>
           <CheckedTitles>Observed, LeafLigules,Obs(LeafTips)</CheckedTitles>
@@ -9648,7 +9648,7 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
       </Graph>
       <Graph name="Phenology">
         <Legend>
-          <CheckedTitles>Simulated, stage_code,15-2010-HAWK-MAIZ-HYBR 39V43-EarlySow</CheckedTitles>
+          <CheckedTitles>Simulated, stage_code,15-2010-HAWK-MAIZ-HYBR 33M54-MidSow</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(Emerge)</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(Silk)</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(Silk)</CheckedTitles>
