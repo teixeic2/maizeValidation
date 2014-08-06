@@ -1955,6 +1955,8 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
    rootDM = 0
 
    grainDM = 0
+
+   
    </text>
             <event>init</event>
           </script>
@@ -1972,7 +1974,9 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
    
    stemDM = 10 * stemgreenwt
 
-   grainDM = 10 * grain_wt</text>
+   grainDM = 10 * grain_wt
+
+   </text>
             <event>end_of_day</event>
           </script>
         </manager>
@@ -1993,6 +1997,7 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           <variable>lai</variable>
           <variable>cover_tot</variable>
           <variable>sw</variable>
+          <variable>HI</variable>
         </variables>
         <events name="My Variables Events">
           <event>Daily</event>
