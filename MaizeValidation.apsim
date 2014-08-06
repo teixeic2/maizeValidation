@@ -1981,17 +1981,18 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
         <filename output="yes">01-2010-LINC-MAIZ-MODE 1_NilN.out</filename>
         <title>01-2010-LINC-MAIZ-MODE 1_NilN</title>
         <variables name="My Variables">
-          <variable>SimNo</variable>
+          <variable>ExpNo</variable>
           <variable>TreatNo</variable>
           <variable>dd/mm/yyyy as Date</variable>
+          <variable>stage_code</variable>
           <variable>AboveDM</variable>
           <variable>LeafDM</variable>
           <variable>StemDM</variable>
-          <variable>lai</variable>
-          <variable>stage_code</variable>
-          <variable>leaf_no</variable>
           <variable>GrainDM</variable>
+          <variable>leaf_no</variable>
+          <variable>lai</variable>
           <variable>cover_tot</variable>
+          <variable>sw</variable>
         </variables>
         <events name="My Variables Events">
           <event>Daily</event>
@@ -2089,7 +2090,6 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
       </Graph>
       <Graph name="LeafNo">
         <Legend>
-          <CheckedTitles>Simulated, leaf_no,01-2010-LINC-MAIZ-MODE MedN</CheckedTitles>
           <CheckedTitles>Observed, LeafLigules,Obs(TipsLigules)</CheckedTitles>
           <CheckedTitles>Observed, LeafLigules,Obs(TipsLigules)</CheckedTitles>
           <CheckedTitles>Observed, LeafTips,Obs(TipsLigules)</CheckedTitles>
@@ -2299,12 +2299,6 @@ TreatNo = 1</text>
         <operations name="irrig_applic" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/1_NilN/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/1_NilN/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/1_NilN/outputfile">
-        <filename output="yes">01-2010-LINC-MAIZ-MODE 2_MedN.out</filename>
-        <title>01-2010-LINC-MAIZ-MODE 2_MedN</title>
-        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/1_NilN/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/1_NilN/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/1_NilN/maize">
         <ini shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/1_NilN/maize/ini" />
       </maize>
@@ -2391,6 +2385,12 @@ TreatNo = 2</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/1_NilN/outputfile">
+        <filename output="yes">01-2010-LINC-MAIZ-MODE 2_MedN.out</filename>
+        <title>01-2010-LINC-MAIZ-MODE 2_MedN</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/1_NilN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/1_NilN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
   </simulation>
   <simulation name="23-2012-LINC-MAIZ-RAIN">
@@ -2650,12 +2650,6 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
         </operations>
         <manager name="Report Variables" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/outputfile">
-        <filename output="yes">23-2012-LINC-MAIZ-RAIN NilN-DryW.out</filename>
-        <title>23-2012-LINC-MAIZ-RAIN NilN-DryW</title>
-        <variables name="My Variables" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/maize">
         <ini shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/maize/ini" />
       </maize>
@@ -2755,6 +2749,12 @@ TreatNo = 1</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">23-2012-LINC-MAIZ-RAIN NilN-DryW.out</filename>
+        <title>23-2012-LINC-MAIZ-RAIN NilN-DryW</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="NilN-IrrigFullW">
       <Soil name="paparoa_silt_loam">
@@ -3934,25 +3934,6 @@ TreatNo = 1</text>
           </script>
         </manager>
       </folder>
-      <outputfile>
-        <filename output="yes">23-2012-LINC-MAIZ-RAIN NilN-IrrigFullW.out</filename>
-        <title>23-2012-LINC-MAIZ-RAIN NilN-IrrigFullW</title>
-        <variables name="My Variables">
-          <variable>dd/mm/yyyy as Date</variable>
-          <variable>AboveDM</variable>
-          <variable>LeafDM</variable>
-          <variable>StemDM</variable>
-          <variable>lai</variable>
-          <variable>stage_code</variable>
-          <variable>GrainDM</variable>
-          <variable>leaf_no</variable>
-          <variable>sw</variable>
-          <variable>cover_tot</variable>
-        </variables>
-        <events name="My Variables Events">
-          <event>Daily</event>
-        </events>
-      </outputfile>
       <maize>
         <ini>
           <filename input="yes">MaizeValidation.xml</filename>
@@ -4215,6 +4196,12 @@ TreatNo = 2</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">23-2012-LINC-MAIZ-RAIN NilN-IrrigFullW.out</filename>
+        <title>23-2012-LINC-MAIZ-RAIN NilN-IrrigFullW</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="VLowN-IrrigFullW" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam">
@@ -4310,12 +4297,6 @@ TreatNo = 2</text>
         <operations name="irrig_applic" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/outputfile">
-        <filename output="yes">23-2012-LINC-MAIZ-RAIN VLowN-IrrigFullW.out</filename>
-        <title>23-2012-LINC-MAIZ-RAIN VLowN-IrrigFullW</title>
-        <variables name="My Variables" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/maize">
         <ini shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/maize/ini" />
       </maize>
@@ -4415,6 +4396,12 @@ TreatNo = 3</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">23-2012-LINC-MAIZ-RAIN VLowN-IrrigFullW.out</filename>
+        <title>23-2012-LINC-MAIZ-RAIN VLowN-IrrigFullW</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="VLowN-DryW" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam">
@@ -4686,12 +4673,6 @@ TreatNo = 3</text>
         </operations>
         <manager name="Report Variables" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/outputfile">
-        <filename output="yes">23-2012-LINC-MAIZ-RAIN VLowN-DryW.out</filename>
-        <title>23-2012-LINC-MAIZ-RAIN VLowN-DryW</title>
-        <variables name="My Variables" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/maize">
         <ini shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/maize/ini" />
       </maize>
@@ -4791,6 +4772,12 @@ TreatNo = 4</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">23-2012-LINC-MAIZ-RAIN VLowN-DryW.out</filename>
+        <title>23-2012-LINC-MAIZ-RAIN VLowN-DryW</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="MedN-IrrigFullW" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam">
@@ -5024,12 +5011,6 @@ TreatNo = 4</text>
         </operations>
         <manager name="Report Variables" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/outputfile">
-        <filename output="yes">23-2012-LINC-MAIZ-RAIN MedN-IrrigFullW.out</filename>
-        <title>23-2012-LINC-MAIZ-RAIN MedN-IrrigFullW</title>
-        <variables name="My Variables" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/maize">
         <ini shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/maize/ini" />
       </maize>
@@ -5129,6 +5110,12 @@ TreatNo = 5</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">23-2012-LINC-MAIZ-RAIN MedN-IrrigFullW.out</filename>
+        <title>23-2012-LINC-MAIZ-RAIN MedN-IrrigFullW</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="MedN-DryW" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam">
@@ -5398,12 +5385,6 @@ TreatNo = 5</text>
         </operations>
         <manager name="Report Variables" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/outputfile">
-        <filename output="yes">23-2012-LINC-MAIZ-RAIN MedN-DryW.out</filename>
-        <title>23-2012-LINC-MAIZ-RAIN MedN-DryW</title>
-        <variables name="My Variables" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/maize">
         <ini shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/maize/ini" />
       </maize>
@@ -5503,6 +5484,12 @@ TreatNo = 6</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">23-2012-LINC-MAIZ-RAIN MedN-DryW.out</filename>
+        <title>23-2012-LINC-MAIZ-RAIN MedN-DryW</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
   </simulation>
   <simulation name="02-2008-LINC-MAIZ-PLAS">
@@ -6677,24 +6664,6 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </script>
         </manager>
       </folder>
-      <outputfile>
-        <filename output="yes">02-2008-LINC-MAIZ-PLAS 34K77-Bare-EarlySow.out</filename>
-        <title>02-2008-LINC-MAIZ-PLAS 34K77-Bare-EarlySow</title>
-        <variables name="My Variables">
-          <variable>dd/mm/yyyy as Date</variable>
-          <variable>AboveDM</variable>
-          <variable>LeafDM</variable>
-          <variable>StemDM</variable>
-          <variable>lai</variable>
-          <variable>stage_code</variable>
-          <variable>leaf_no</variable>
-          <variable>GrainDM</variable>
-          <variable>cover_tot</variable>
-        </variables>
-        <events name="My Variables Events">
-          <event>Daily</event>
-        </events>
-      </outputfile>
       <maize>
         <ini>
           <filename input="yes">MaizeValidation.xml</filename>
@@ -6857,6 +6826,12 @@ TreatNo = 1</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">02-2008-LINC-MAIZ-PLAS 34K77-Bare-EarlySow.out</filename>
+        <title>02-2008-LINC-MAIZ-PLAS 34K77-Bare-EarlySow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="34K77-Plastic-EarlySow" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/paparoa_silt_loam">
@@ -6943,12 +6918,6 @@ TreatNo = 1</text>
         <operations name="irrig_applic" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/outputfile">
-        <filename output="yes">02-2008-LINC-MAIZ-PLAS 34K77-Plastic-EarlySow.out</filename>
-        <title>02-2008-LINC-MAIZ-PLAS 34K77-Plastic-EarlySow</title>
-        <variables name="My Variables" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/maize">
         <ini shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/maize/ini" />
       </maize>
@@ -7021,6 +6990,12 @@ TreatNo = 2</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">02-2008-LINC-MAIZ-PLAS 34K77-Plastic-EarlySow.out</filename>
+        <title>02-2008-LINC-MAIZ-PLAS 34K77-Plastic-EarlySow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="34K77-Bare-LateSow" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/paparoa_silt_loam">
@@ -7183,12 +7158,6 @@ TreatNo = 2</text>
         <operations name="irrig_applic" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/outputfile">
-        <filename output="yes">02-2008-LINC-MAIZ-PLAS 34K77-Bare-LateSow.out</filename>
-        <title>02-2008-LINC-MAIZ-PLAS 34K77-Bare-LateSow</title>
-        <variables name="My Variables" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/maize">
         <ini shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/maize/ini" />
       </maize>
@@ -7261,6 +7230,12 @@ TreatNo = 3</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">02-2008-LINC-MAIZ-PLAS 34K77-Bare-LateSow.out</filename>
+        <title>02-2008-LINC-MAIZ-PLAS 34K77-Bare-LateSow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="34K77-Plastic-LateSow" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/paparoa_silt_loam">
@@ -7423,12 +7398,6 @@ TreatNo = 3</text>
         <operations name="irrig_applic" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/outputfile">
-        <filename output="yes">02-2008-LINC-MAIZ-PLAS 34K77-Plastic-LateSow.out</filename>
-        <title>02-2008-LINC-MAIZ-PLAS 34K77-Plastic-LateSow</title>
-        <variables name="My Variables" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/maize">
         <ini shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/maize/ini" />
       </maize>
@@ -7501,6 +7470,12 @@ TreatNo = 4</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">02-2008-LINC-MAIZ-PLAS 34K77-Plastic-LateSow.out</filename>
+        <title>02-2008-LINC-MAIZ-PLAS 34K77-Plastic-LateSow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="39G12-Bare-EarlySow" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/paparoa_silt_loam">
@@ -7587,12 +7562,6 @@ TreatNo = 4</text>
         <operations name="irrig_applic" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/outputfile">
-        <filename output="yes">02-2008-LINC-MAIZ-PLAS 39G12-Bare-EarlySow.out</filename>
-        <title>02-2008-LINC-MAIZ-PLAS 39G12-Bare-EarlySow</title>
-        <variables name="My Variables" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/maize">
         <ini shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/maize/ini" />
       </maize>
@@ -7665,6 +7634,12 @@ TreatNo = 5</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">02-2008-LINC-MAIZ-PLAS 39G12-Bare-EarlySow.out</filename>
+        <title>02-2008-LINC-MAIZ-PLAS 39G12-Bare-EarlySow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="39G12-Plastic-EarlySow" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/paparoa_silt_loam">
@@ -7751,12 +7726,6 @@ TreatNo = 5</text>
         <operations name="irrig_applic" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/outputfile">
-        <filename output="yes">02-2008-LINC-MAIZ-PLAS 39G12-Plastic-EarlySow.out</filename>
-        <title>02-2008-LINC-MAIZ-PLAS 39G12-Plastic-EarlySow</title>
-        <variables name="My Variables" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/maize">
         <ini shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/maize/ini" />
       </maize>
@@ -7829,6 +7798,12 @@ TreatNo = 6</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">02-2008-LINC-MAIZ-PLAS 39G12-Plastic-EarlySow.out</filename>
+        <title>02-2008-LINC-MAIZ-PLAS 39G12-Plastic-EarlySow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="39G12-Bare-LateSow" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/paparoa_silt_loam">
@@ -7991,12 +7966,6 @@ TreatNo = 6</text>
         <operations name="irrig_applic" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/outputfile">
-        <filename output="yes">02-2008-LINC-MAIZ-PLAS 39G12-Bare-LateSow.out</filename>
-        <title>02-2008-LINC-MAIZ-PLAS 39G12-Bare-LateSow</title>
-        <variables name="My Variables" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/maize">
         <ini shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/maize/ini" />
       </maize>
@@ -8069,6 +8038,12 @@ TreatNo = 7</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">02-2008-LINC-MAIZ-PLAS 39G12-Bare-LateSow.out</filename>
+        <title>02-2008-LINC-MAIZ-PLAS 39G12-Bare-LateSow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="39G12-Plastic-LateSow" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/paparoa_silt_loam">
@@ -8231,12 +8206,6 @@ TreatNo = 7</text>
         <operations name="irrig_applic" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/outputfile">
-        <filename output="yes">02-2008-LINC-MAIZ-PLAS 39G12-Plastic-LateSow.out</filename>
-        <title>02-2008-LINC-MAIZ-PLAS 39G12-Plastic-LateSow</title>
-        <variables name="My Variables" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/maize">
         <ini shortcut="/Simulations/02-2008-LINC-MAIZ-PLAS/34K77-Bare-EarlySow/maize/ini" />
       </maize>
@@ -8309,6 +8278,12 @@ TreatNo = 8</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">02-2008-LINC-MAIZ-PLAS 39G12-Plastic-LateSow.out</filename>
+        <title>02-2008-LINC-MAIZ-PLAS 39G12-Plastic-LateSow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
   </simulation>
   <simulation name="15-2010-HAWK-MAIZ-HYBR">
@@ -9503,24 +9478,6 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </script>
         </manager>
       </folder>
-      <outputfile>
-        <filename output="yes">15-2010-HAWK-MAIZ-HYBR 39V43-EarlySow.out</filename>
-        <title>15-2010-HAWK-MAIZ-HYBR 39V43-EarlySow</title>
-        <variables name="My Variables">
-          <variable>dd/mm/yyyy as Date</variable>
-          <variable>AboveDM</variable>
-          <variable>LeafDM</variable>
-          <variable>StemDM</variable>
-          <variable>lai</variable>
-          <variable>stage_code</variable>
-          <variable>leaf_no</variable>
-          <variable>GrainDM</variable>
-          <variable>cover_tot</variable>
-        </variables>
-        <events name="My Variables Events">
-          <event>Daily</event>
-        </events>
-      </outputfile>
       <maize>
         <ini>
           <filename input="yes">MaizeValidation.xml</filename>
@@ -9611,7 +9568,7 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
       </Graph>
       <Graph name="LeafNo">
         <Legend>
-          <CheckedTitles>Simulated, leaf_no,15-2010-HAWK-MAIZ-HYBR 38H20-MidSow</CheckedTitles>
+          <CheckedTitles>Simulated, leaf_no,15-2010-HAWK-MAIZ-HYBR 38H20-EarlySow</CheckedTitles>
           <CheckedTitles>Observed, LeafLigules,Obs(LeafLigules)</CheckedTitles>
           <CheckedTitles>Observed, LeafLigules,Obs(LeafLigules)</CheckedTitles>
           <CheckedTitles>Observed, LeafLigules,Obs(LeafTips)</CheckedTitles>
@@ -9648,7 +9605,7 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
       </Graph>
       <Graph name="Phenology">
         <Legend>
-          <CheckedTitles>Simulated, stage_code,15-2010-HAWK-MAIZ-HYBR 33M54-MidSow</CheckedTitles>
+          <CheckedTitles>Simulated, stage_code,15-2010-HAWK-MAIZ-HYBR 38H20-MidSow</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(Emerge)</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(Silk)</CheckedTitles>
           <CheckedTitles>Observed, Silk,Obs(Silk)</CheckedTitles>
@@ -9730,6 +9687,12 @@ TreatNo = 1</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">15-2010-HAWK-MAIZ-HYBR 39V43-EarlySow.out</filename>
+        <title>15-2010-HAWK-MAIZ-HYBR 39V43-EarlySow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="39V43-MidSow" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/paparoa_silt_loam">
@@ -9894,12 +9857,6 @@ TreatNo = 1</text>
         <operations name="irrig_applic" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile">
-        <filename output="yes">15-2010-HAWK-MAIZ-HYBR 39V43-MidSow.out</filename>
-        <title>15-2010-HAWK-MAIZ-HYBR 39V43-MidSow</title>
-        <variables name="My Variables" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/maize">
         <ini shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/maize/ini" />
       </maize>
@@ -9987,6 +9944,12 @@ TreatNo = 2</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">15-2010-HAWK-MAIZ-HYBR 39V43-MidSow.out</filename>
+        <title>15-2010-HAWK-MAIZ-HYBR 39V43-MidSow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="39V43-LateSow" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/paparoa_silt_loam">
@@ -10151,12 +10114,6 @@ TreatNo = 2</text>
         <operations name="irrig_applic" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile">
-        <filename output="yes">15-2010-HAWK-MAIZ-HYBR 39V43-LateSow.out</filename>
-        <title>15-2010-HAWK-MAIZ-HYBR 39V43-LateSow</title>
-        <variables name="My Variables" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/maize">
         <ini shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/maize/ini" />
       </maize>
@@ -10244,6 +10201,12 @@ TreatNo = 3</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">15-2010-HAWK-MAIZ-HYBR 39V43-LateSow.out</filename>
+        <title>15-2010-HAWK-MAIZ-HYBR 39V43-LateSow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="38H20-EarlySow" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/paparoa_silt_loam">
@@ -10330,12 +10293,6 @@ TreatNo = 3</text>
         <operations name="irrig_applic" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile">
-        <filename output="yes">15-2010-HAWK-MAIZ-HYBR 38H20-EarlySow.out</filename>
-        <title>15-2010-HAWK-MAIZ-HYBR 38H20-EarlySow</title>
-        <variables name="My Variables" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/maize">
         <ini shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/maize/ini" />
       </maize>
@@ -10423,6 +10380,12 @@ TreatNo = 4</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">15-2010-HAWK-MAIZ-HYBR 38H20-EarlySow.out</filename>
+        <title>15-2010-HAWK-MAIZ-HYBR 38H20-EarlySow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="38H20-MidSow" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/paparoa_silt_loam">
@@ -10587,12 +10550,6 @@ TreatNo = 4</text>
         <operations name="irrig_applic" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile">
-        <filename output="yes">15-2010-HAWK-MAIZ-HYBR 38H20-MidSow.out</filename>
-        <title>15-2010-HAWK-MAIZ-HYBR 38H20-MidSow</title>
-        <variables name="My Variables" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/maize">
         <ini shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/maize/ini" />
       </maize>
@@ -10680,6 +10637,12 @@ TreatNo = 5</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">15-2010-HAWK-MAIZ-HYBR 38H20-MidSow.out</filename>
+        <title>15-2010-HAWK-MAIZ-HYBR 38H20-MidSow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="38H20-LateSow" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/paparoa_silt_loam">
@@ -10844,12 +10807,6 @@ TreatNo = 5</text>
         <operations name="irrig_applic" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile">
-        <filename output="yes">15-2010-HAWK-MAIZ-HYBR 38H20-LateSow.out</filename>
-        <title>15-2010-HAWK-MAIZ-HYBR 38H20-LateSow</title>
-        <variables name="My Variables" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/maize">
         <ini shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/maize/ini" />
       </maize>
@@ -10937,6 +10894,12 @@ TreatNo = 6</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">15-2010-HAWK-MAIZ-HYBR 38H20-LateSow.out</filename>
+        <title>15-2010-HAWK-MAIZ-HYBR 38H20-LateSow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="33M54-EarlySow" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/paparoa_silt_loam">
@@ -11023,12 +10986,6 @@ TreatNo = 6</text>
         <operations name="irrig_applic" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile">
-        <filename output="yes">15-2010-HAWK-MAIZ-HYBR 33M54-EarlySow.out</filename>
-        <title>15-2010-HAWK-MAIZ-HYBR 33M54-EarlySow</title>
-        <variables name="My Variables" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/maize">
         <ini shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/maize/ini" />
       </maize>
@@ -11116,6 +11073,12 @@ TreatNo = 7</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">15-2010-HAWK-MAIZ-HYBR 33M54-EarlySow.out</filename>
+        <title>15-2010-HAWK-MAIZ-HYBR 33M54-EarlySow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="33M54-MidSow" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/paparoa_silt_loam">
@@ -11280,12 +11243,6 @@ TreatNo = 7</text>
         <operations name="irrig_applic" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile">
-        <filename output="yes">15-2010-HAWK-MAIZ-HYBR 33M54-MidSow.out</filename>
-        <title>15-2010-HAWK-MAIZ-HYBR 33M54-MidSow</title>
-        <variables name="My Variables" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/maize">
         <ini shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/maize/ini" />
       </maize>
@@ -11373,6 +11330,12 @@ TreatNo = 8</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">15-2010-HAWK-MAIZ-HYBR 33M54-MidSow.out</filename>
+        <title>15-2010-HAWK-MAIZ-HYBR 33M54-MidSow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="33M54-LateSow" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/paparoa_silt_loam">
@@ -11537,12 +11500,6 @@ TreatNo = 8</text>
         <operations name="irrig_applic" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile">
-        <filename output="yes">15-2010-HAWK-MAIZ-HYBR 33M54-LateSow.out</filename>
-        <title>15-2010-HAWK-MAIZ-HYBR 33M54-LateSow</title>
-        <variables name="My Variables" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/maize">
         <ini shortcut="/Simulations/15-2010-HAWK-MAIZ-HYBR/39V43-EarlySow/maize/ini" />
       </maize>
@@ -11630,6 +11587,12 @@ TreatNo = 9</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">15-2010-HAWK-MAIZ-HYBR 33M54-LateSow.out</filename>
+        <title>15-2010-HAWK-MAIZ-HYBR 33M54-LateSow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
   </simulation>
   <simulation name="03-2007-LINC-MAIZ-PLAS">
@@ -12808,24 +12771,6 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </script>
         </manager>
       </folder>
-      <outputfile>
-        <filename output="yes">03-2007-LINC-MAIZ-PLAS 38H20-Bare.out</filename>
-        <title>03-2007-LINC-MAIZ-PLAS 38H20-Bare</title>
-        <variables name="My Variables">
-          <variable>dd/mm/yyyy as Date</variable>
-          <variable>AboveDM</variable>
-          <variable>LeafDM</variable>
-          <variable>StemDM</variable>
-          <variable>lai</variable>
-          <variable>stage_code</variable>
-          <variable>leaf_no</variable>
-          <variable>GrainDM</variable>
-          <variable>cover_tot</variable>
-        </variables>
-        <events name="My Variables Events">
-          <event>Daily</event>
-        </events>
-      </outputfile>
       <maize>
         <ini>
           <filename input="yes">MaizeValidation.xml</filename>
@@ -12993,6 +12938,12 @@ TreatNo = 1</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">03-2007-LINC-MAIZ-PLAS 38H20-Bare.out</filename>
+        <title>03-2007-LINC-MAIZ-PLAS 38H20-Bare</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="38H20-Plastic" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/paparoa_silt_loam">
@@ -13079,12 +13030,6 @@ TreatNo = 1</text>
         <operations name="irrig_applic" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/outputfile">
-        <filename output="yes">03-2007-LINC-MAIZ-PLAS 38H20-Plastic.out</filename>
-        <title>03-2007-LINC-MAIZ-PLAS 38H20-Plastic</title>
-        <variables name="My Variables" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/maize">
         <ini shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/maize/ini" />
       </maize>
@@ -13157,6 +13102,12 @@ TreatNo = 2</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">03-2007-LINC-MAIZ-PLAS 38H20-Plastic.out</filename>
+        <title>03-2007-LINC-MAIZ-PLAS 38H20-Plastic</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="39G12-Bare" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/paparoa_silt_loam">
@@ -13243,12 +13194,6 @@ TreatNo = 2</text>
         <operations name="irrig_applic" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/outputfile">
-        <filename output="yes">03-2007-LINC-MAIZ-PLAS 39G12-Bare.out</filename>
-        <title>03-2007-LINC-MAIZ-PLAS 39G12-Bare</title>
-        <variables name="My Variables" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/maize">
         <ini shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/maize/ini" />
       </maize>
@@ -13321,6 +13266,12 @@ TreatNo = 3</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">03-2007-LINC-MAIZ-PLAS 39G12-Bare.out</filename>
+        <title>03-2007-LINC-MAIZ-PLAS 39G12-Bare</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="39G12-Plastic" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/paparoa_silt_loam">
@@ -13407,12 +13358,6 @@ TreatNo = 3</text>
         <operations name="irrig_applic" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/outputfile">
-        <filename output="yes">03-2007-LINC-MAIZ-PLAS 39G12-Plastic.out</filename>
-        <title>03-2007-LINC-MAIZ-PLAS 39G12-Plastic</title>
-        <variables name="My Variables" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/maize">
         <ini shortcut="/Simulations/03-2007-LINC-MAIZ-PLAS/38H20-Bare/maize/ini" />
       </maize>
@@ -13485,6 +13430,12 @@ TreatNo = 4</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">03-2007-LINC-MAIZ-PLAS 39G12-Plastic.out</filename>
+        <title>03-2007-LINC-MAIZ-PLAS 39G12-Plastic</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
   </simulation>
   <simulation name="06-2008-LINC-MAIZ-SHYB">
@@ -14662,24 +14613,6 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </script>
         </manager>
       </folder>
-      <outputfile>
-        <filename output="yes">06-2008-LINC-MAIZ-SHYB 39V43.out</filename>
-        <title>06-2008-LINC-MAIZ-SHYB 39V43</title>
-        <variables name="My Variables">
-          <variable>dd/mm/yyyy as Date</variable>
-          <variable>AboveDM</variable>
-          <variable>LeafDM</variable>
-          <variable>StemDM</variable>
-          <variable>lai</variable>
-          <variable>stage_code</variable>
-          <variable>leaf_no</variable>
-          <variable>GrainDM</variable>
-          <variable>cover_tot</variable>
-        </variables>
-        <events name="My Variables Events">
-          <event>Daily</event>
-        </events>
-      </outputfile>
       <maize>
         <ini>
           <filename input="yes">MaizeValidation.xml</filename>
@@ -14868,7 +14801,7 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
       <manager name="SimCode">
         <script>
           <text>ExpNo = 6
-TreatNo = 2</text>
+TreatNo = 1</text>
           <event>init</event>
         </script>
         <script>
@@ -14882,6 +14815,12 @@ TreatNo = 2</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">06-2008-LINC-MAIZ-SHYB 39V43.out</filename>
+        <title>06-2008-LINC-MAIZ-SHYB 39V43</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="39G12" shortcut="/Simulations/06-2008-LINC-MAIZ-SHYB/39V43">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/06-2008-LINC-MAIZ-SHYB/39V43/paparoa_silt_loam">
@@ -14968,12 +14907,6 @@ TreatNo = 2</text>
         <operations name="irrig_applic" shortcut="/Simulations/06-2008-LINC-MAIZ-SHYB/39V43/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/06-2008-LINC-MAIZ-SHYB/39V43/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/06-2008-LINC-MAIZ-SHYB/39V43/outputfile">
-        <filename output="yes">06-2008-LINC-MAIZ-SHYB 39G12.out</filename>
-        <title>06-2008-LINC-MAIZ-SHYB 39G12</title>
-        <variables name="My Variables" shortcut="/Simulations/06-2008-LINC-MAIZ-SHYB/39V43/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/06-2008-LINC-MAIZ-SHYB/39V43/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/06-2008-LINC-MAIZ-SHYB/39V43/maize">
         <ini shortcut="/Simulations/06-2008-LINC-MAIZ-SHYB/39V43/maize/ini" />
       </maize>
@@ -15046,7 +14979,7 @@ TreatNo = 2</text>
       <manager name="SimCode">
         <script>
           <text>ExpNo = 6
-TreatNo = 1</text>
+TreatNo = 2</text>
           <event>init</event>
         </script>
         <script>
@@ -15060,6 +14993,12 @@ TreatNo = 1</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">06-2008-LINC-MAIZ-SHYB 39G12.out</filename>
+        <title>06-2008-LINC-MAIZ-SHYB 39G12</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="39D34" shortcut="/Simulations/06-2008-LINC-MAIZ-SHYB/39V43">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/06-2008-LINC-MAIZ-SHYB/39V43/paparoa_silt_loam">
@@ -15146,12 +15085,6 @@ TreatNo = 1</text>
         <operations name="irrig_applic" shortcut="/Simulations/06-2008-LINC-MAIZ-SHYB/39V43/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/06-2008-LINC-MAIZ-SHYB/39V43/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/06-2008-LINC-MAIZ-SHYB/39V43/outputfile">
-        <filename output="yes">06-2008-LINC-MAIZ-SHYB 39D34.out</filename>
-        <title>06-2008-LINC-MAIZ-SHYB 39D34</title>
-        <variables name="My Variables" shortcut="/Simulations/06-2008-LINC-MAIZ-SHYB/39V43/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/06-2008-LINC-MAIZ-SHYB/39V43/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/06-2008-LINC-MAIZ-SHYB/39V43/maize">
         <ini shortcut="/Simulations/06-2008-LINC-MAIZ-SHYB/39V43/maize/ini" />
       </maize>
@@ -15238,6 +15171,12 @@ TreatNo = 3</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">06-2008-LINC-MAIZ-SHYB 39D34.out</filename>
+        <title>06-2008-LINC-MAIZ-SHYB 39D34</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
   </simulation>
   <simulation name="10-2009-HAWK-MAIZ-PHEN">
@@ -16432,20 +16371,6 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </script>
         </manager>
       </folder>
-      <outputfile>
-        <filename output="yes">10-2009-HAWK-MAIZ-PHEN 36H36-EarlySow.out</filename>
-        <title>10-2009-HAWK-MAIZ-PHEN 36H36-EarlySow</title>
-        <variables name="My Variables">
-          <variable>dd/mm/yyyy as Date</variable>
-          <variable>lai</variable>
-          <variable>stage_code</variable>
-          <variable>leaf_no</variable>
-          <variable>GrainDM</variable>
-        </variables>
-        <events name="My Variables Events">
-          <event>Daily</event>
-        </events>
-      </outputfile>
       <maize>
         <ini>
           <filename input="yes">MaizeValidation.xml</filename>
@@ -16596,6 +16521,12 @@ TreatNo = 1</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">10-2009-HAWK-MAIZ-PHEN 36H36-EarlySow.out</filename>
+        <title>10-2009-HAWK-MAIZ-PHEN 36H36-EarlySow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="36H36-LateSow" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/paparoa_silt_loam">
@@ -16682,12 +16613,6 @@ TreatNo = 1</text>
         <operations name="irrig_applic" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile">
-        <filename output="yes">10-2009-HAWK-MAIZ-PHEN 36H36-LateSow.out</filename>
-        <title>10-2009-HAWK-MAIZ-PHEN 36H36-LateSow</title>
-        <variables name="My Variables" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/maize">
         <ini shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/maize/ini" />
       </maize>
@@ -16761,6 +16686,12 @@ TreatNo = 2</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">10-2009-HAWK-MAIZ-PHEN 36H36-LateSow.out</filename>
+        <title>10-2009-HAWK-MAIZ-PHEN 36H36-LateSow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="38P05-EarlySow" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/paparoa_silt_loam">
@@ -16847,12 +16778,6 @@ TreatNo = 2</text>
         <operations name="irrig_applic" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile">
-        <filename output="yes">10-2009-HAWK-MAIZ-PHEN 38P05-EarlySow.out</filename>
-        <title>10-2009-HAWK-MAIZ-PHEN 38P05-EarlySow</title>
-        <variables name="My Variables" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/maize">
         <ini shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/maize/ini" />
       </maize>
@@ -16926,6 +16851,12 @@ TreatNo = 3</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">10-2009-HAWK-MAIZ-PHEN 38P05-EarlySow.out</filename>
+        <title>10-2009-HAWK-MAIZ-PHEN 38P05-EarlySow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="38P05-LateSow" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/paparoa_silt_loam">
@@ -17012,12 +16943,6 @@ TreatNo = 3</text>
         <operations name="irrig_applic" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile">
-        <filename output="yes">10-2009-HAWK-MAIZ-PHEN 38P05-LateSow.out</filename>
-        <title>10-2009-HAWK-MAIZ-PHEN 38P05-LateSow</title>
-        <variables name="My Variables" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/maize">
         <ini shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/maize/ini" />
       </maize>
@@ -17091,6 +17016,12 @@ TreatNo = 4</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">10-2009-HAWK-MAIZ-PHEN 38P05-LateSow.out</filename>
+        <title>10-2009-HAWK-MAIZ-PHEN 38P05-LateSow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="39G12-EarlySow" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/paparoa_silt_loam">
@@ -17177,12 +17108,6 @@ TreatNo = 4</text>
         <operations name="irrig_applic" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile">
-        <filename output="yes">10-2009-HAWK-MAIZ-PHEN 39G12-EarlySow.out</filename>
-        <title>10-2009-HAWK-MAIZ-PHEN 39G12-EarlySow</title>
-        <variables name="My Variables" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/maize">
         <ini shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/maize/ini" />
       </maize>
@@ -17256,6 +17181,12 @@ TreatNo = 5</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">10-2009-HAWK-MAIZ-PHEN 39G12-EarlySow.out</filename>
+        <title>10-2009-HAWK-MAIZ-PHEN 39G12-EarlySow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="39G12-LateSow" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/paparoa_silt_loam">
@@ -17342,12 +17273,6 @@ TreatNo = 5</text>
         <operations name="irrig_applic" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile">
-        <filename output="yes">10-2009-HAWK-MAIZ-PHEN 39G12-LateSow.out</filename>
-        <title>10-2009-HAWK-MAIZ-PHEN 39G12-LateSow</title>
-        <variables name="My Variables" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/maize">
         <ini shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/maize/ini" />
       </maize>
@@ -17421,6 +17346,12 @@ TreatNo = 6</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">10-2009-HAWK-MAIZ-PHEN 39G12-LateSow.out</filename>
+        <title>10-2009-HAWK-MAIZ-PHEN 39G12-LateSow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="DK624-EarlySow" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/paparoa_silt_loam">
@@ -17507,12 +17438,6 @@ TreatNo = 6</text>
         <operations name="irrig_applic" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile">
-        <filename output="yes">10-2009-HAWK-MAIZ-PHEN DK624-EarlySow.out</filename>
-        <title>10-2009-HAWK-MAIZ-PHEN DK624-EarlySow</title>
-        <variables name="My Variables" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/maize">
         <ini shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/maize/ini" />
       </maize>
@@ -17586,6 +17511,12 @@ TreatNo = 7</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">10-2009-HAWK-MAIZ-PHEN DK624-EarlySow.out</filename>
+        <title>10-2009-HAWK-MAIZ-PHEN DK624-EarlySow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="DK624-LateSow" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/paparoa_silt_loam">
@@ -17672,12 +17603,6 @@ TreatNo = 7</text>
         <operations name="irrig_applic" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile">
-        <filename output="yes">10-2009-HAWK-MAIZ-PHEN DK624-LateSow.out</filename>
-        <title>10-2009-HAWK-MAIZ-PHEN DK624-LateSow</title>
-        <variables name="My Variables" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/maize">
         <ini shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/maize/ini" />
       </maize>
@@ -17751,6 +17676,12 @@ TreatNo = 8</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">10-2009-HAWK-MAIZ-PHEN DK624-LateSow.out</filename>
+        <title>10-2009-HAWK-MAIZ-PHEN DK624-LateSow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="N51-N4-EarlySow" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/paparoa_silt_loam">
@@ -17837,12 +17768,6 @@ TreatNo = 8</text>
         <operations name="irrig_applic" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile">
-        <filename output="yes">10-2009-HAWK-MAIZ-PHEN N51-N4-EarlySow.out</filename>
-        <title>10-2009-HAWK-MAIZ-PHEN N51-N4-EarlySow</title>
-        <variables name="My Variables" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/maize">
         <ini shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/maize/ini" />
       </maize>
@@ -17916,6 +17841,12 @@ TreatNo = 9</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">10-2009-HAWK-MAIZ-PHEN N51-N4-EarlySow.out</filename>
+        <title>10-2009-HAWK-MAIZ-PHEN N51-N4-EarlySow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="N51-N4-LateSow" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/paparoa_silt_loam">
@@ -18002,12 +17933,6 @@ TreatNo = 9</text>
         <operations name="irrig_applic" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile">
-        <filename output="yes">10-2009-HAWK-MAIZ-PHEN N51-N4-LateSow.out</filename>
-        <title>10-2009-HAWK-MAIZ-PHEN N51-N4-LateSow</title>
-        <variables name="My Variables" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/maize">
         <ini shortcut="/Simulations/10-2009-HAWK-MAIZ-PHEN/36H36-EarlySow/maize/ini" />
       </maize>
@@ -18077,6 +18002,12 @@ TreatNo = 10</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">10-2009-HAWK-MAIZ-PHEN N51-N4-LateSow.out</filename>
+        <title>10-2009-HAWK-MAIZ-PHEN N51-N4-LateSow</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
   </simulation>
   <simulation name="18-1990-LINC-MAIZ-RAIN">
@@ -19257,24 +19188,6 @@ Note that experiment info has been taken from an old simulation set up by Hamish
           </script>
         </manager>
       </folder>
-      <outputfile>
-        <filename output="yes">18-1990-LINC-MAIZ-RAIN IrrigFullW.out</filename>
-        <title>18-1990-LINC-MAIZ-RAIN IrrigFullW</title>
-        <variables name="My Variables">
-          <variable>dd/mm/yyyy as Date</variable>
-          <variable>AboveDM</variable>
-          <variable>LeafDM</variable>
-          <variable>StemDM</variable>
-          <variable>lai</variable>
-          <variable>stage_code</variable>
-          <variable>leaf_no</variable>
-          <variable>GrainDM</variable>
-          <variable>cover_tot</variable>
-        </variables>
-        <events name="My Variables Events">
-          <event>Daily</event>
-        </events>
-      </outputfile>
       <maize>
         <ini>
           <filename input="yes">MaizeValidation.xml</filename>
@@ -19365,6 +19278,12 @@ TreatNo = 1</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">18-1990-LINC-MAIZ-RAIN IrrigFullW.out</filename>
+        <title>18-1990-LINC-MAIZ-RAIN IrrigFullW</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="Irrig1W" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/paparoa_silt_loam">
@@ -19484,12 +19403,6 @@ TreatNo = 1</text>
         </operations>
         <manager name="Report Variables" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile">
-        <filename output="yes">18-1990-LINC-MAIZ-RAIN Irrig1W.out</filename>
-        <title>18-1990-LINC-MAIZ-RAIN Irrig1W</title>
-        <variables name="My Variables" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/maize">
         <ini shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/maize/ini" />
       </maize>
@@ -19536,6 +19449,12 @@ TreatNo = 2</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">18-1990-LINC-MAIZ-RAIN Irrig1W.out</filename>
+        <title>18-1990-LINC-MAIZ-RAIN Irrig1W</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="Irrig2W" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/paparoa_silt_loam">
@@ -19655,12 +19574,6 @@ TreatNo = 2</text>
         </operations>
         <manager name="Report Variables" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile">
-        <filename output="yes">18-1990-LINC-MAIZ-RAIN Irrig2W.out</filename>
-        <title>18-1990-LINC-MAIZ-RAIN Irrig2W</title>
-        <variables name="My Variables" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/maize">
         <ini shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/maize/ini" />
       </maize>
@@ -19707,6 +19620,12 @@ TreatNo = 3</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">18-1990-LINC-MAIZ-RAIN Irrig2W.out</filename>
+        <title>18-1990-LINC-MAIZ-RAIN Irrig2W</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="Irrig3W" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/paparoa_silt_loam">
@@ -19826,12 +19745,6 @@ TreatNo = 3</text>
         </operations>
         <manager name="Report Variables" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile">
-        <filename output="yes">18-1990-LINC-MAIZ-RAIN Irrig3W.out</filename>
-        <title>18-1990-LINC-MAIZ-RAIN Irrig3W</title>
-        <variables name="My Variables" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/maize">
         <ini shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/maize/ini" />
       </maize>
@@ -19878,6 +19791,12 @@ TreatNo = 4</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">18-1990-LINC-MAIZ-RAIN Irrig3W.out</filename>
+        <title>18-1990-LINC-MAIZ-RAIN Irrig3W</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="Irrig4W" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/paparoa_silt_loam">
@@ -19992,12 +19911,6 @@ TreatNo = 4</text>
         </operations>
         <manager name="Report Variables" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile">
-        <filename output="yes">18-1990-LINC-MAIZ-RAIN Irrig4W.out</filename>
-        <title>18-1990-LINC-MAIZ-RAIN Irrig4W</title>
-        <variables name="My Variables" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/maize">
         <ini shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/maize/ini" />
       </maize>
@@ -20044,6 +19957,12 @@ TreatNo = 5</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">18-1990-LINC-MAIZ-RAIN Irrig4W.out</filename>
+        <title>18-1990-LINC-MAIZ-RAIN Irrig4W</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="Irrig5W" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/paparoa_silt_loam">
@@ -20163,12 +20082,6 @@ TreatNo = 5</text>
         </operations>
         <manager name="Report Variables" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile">
-        <filename output="yes">18-1990-LINC-MAIZ-RAIN Irrig5W.out</filename>
-        <title>18-1990-LINC-MAIZ-RAIN Irrig5W</title>
-        <variables name="My Variables" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/maize">
         <ini shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/maize/ini" />
       </maize>
@@ -20215,6 +20128,12 @@ TreatNo = 6</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">18-1990-LINC-MAIZ-RAIN Irrig5W.out</filename>
+        <title>18-1990-LINC-MAIZ-RAIN Irrig5W</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="Irrig6W" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/paparoa_silt_loam">
@@ -20334,12 +20253,6 @@ TreatNo = 6</text>
         </operations>
         <manager name="Report Variables" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile">
-        <filename output="yes">18-1990-LINC-MAIZ-RAIN Irrig6W.out</filename>
-        <title>18-1990-LINC-MAIZ-RAIN Irrig6W</title>
-        <variables name="My Variables" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/maize">
         <ini shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/maize/ini" />
       </maize>
@@ -20386,6 +20299,12 @@ TreatNo = 7</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">18-1990-LINC-MAIZ-RAIN Irrig6W.out</filename>
+        <title>18-1990-LINC-MAIZ-RAIN Irrig6W</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="Irrig7W" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/paparoa_silt_loam">
@@ -20500,12 +20419,6 @@ TreatNo = 7</text>
         </operations>
         <manager name="Report Variables" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile">
-        <filename output="yes">18-1990-LINC-MAIZ-RAIN Irrig7W.out</filename>
-        <title>18-1990-LINC-MAIZ-RAIN Irrig7W</title>
-        <variables name="My Variables" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/maize">
         <ini shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/maize/ini" />
       </maize>
@@ -20552,6 +20465,12 @@ TreatNo = 8</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">18-1990-LINC-MAIZ-RAIN Irrig7W.out</filename>
+        <title>18-1990-LINC-MAIZ-RAIN Irrig7W</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="Irrig8W" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/paparoa_silt_loam">
@@ -20666,12 +20585,6 @@ TreatNo = 8</text>
         </operations>
         <manager name="Report Variables" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile">
-        <filename output="yes">18-1990-LINC-MAIZ-RAIN Irrig8W.out</filename>
-        <title>18-1990-LINC-MAIZ-RAIN Irrig8W</title>
-        <variables name="My Variables" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/maize">
         <ini shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/maize/ini" />
       </maize>
@@ -20718,6 +20631,12 @@ TreatNo = 9</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">18-1990-LINC-MAIZ-RAIN Irrig8W.out</filename>
+        <title>18-1990-LINC-MAIZ-RAIN Irrig8W</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="Irrig9W" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/paparoa_silt_loam">
@@ -20837,12 +20756,6 @@ TreatNo = 9</text>
         </operations>
         <manager name="Report Variables" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile">
-        <filename output="yes">18-1990-LINC-MAIZ-RAIN Irrig9W.out</filename>
-        <title>18-1990-LINC-MAIZ-RAIN Irrig9W</title>
-        <variables name="My Variables" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/maize">
         <ini shortcut="/Simulations/18-1990-LINC-MAIZ-RAIN/IrrigFullW/maize/ini" />
       </maize>
@@ -20889,6 +20802,12 @@ TreatNo = 10</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">18-1990-LINC-MAIZ-RAIN Irrig9W.out</filename>
+        <title>18-1990-LINC-MAIZ-RAIN Irrig9W</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
   </simulation>
   <simulation name="24-2011-LINC-MAIZ-P21N">
@@ -22056,24 +21975,6 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </script>
         </manager>
       </folder>
-      <outputfile>
-        <filename output="yes">24-2011-LINC-MAIZ-P21N NilN.out</filename>
-        <title>24-2011-LINC-MAIZ-P21N NilN</title>
-        <variables name="My Variables">
-          <variable>dd/mm/yyyy as Date</variable>
-          <variable>AboveDM</variable>
-          <variable>LeafDM</variable>
-          <variable>StemDM</variable>
-          <variable>lai</variable>
-          <variable>stage_code</variable>
-          <variable>leaf_no</variable>
-          <variable>sw</variable>
-          <variable>GrainDM</variable>
-        </variables>
-        <events name="My Variables Events">
-          <event>Daily</event>
-        </events>
-      </outputfile>
       <maize>
         <ini>
           <filename input="yes">MaizeValidation.xml</filename>
@@ -22227,6 +22128,12 @@ TreatNo = 1</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">24-2011-LINC-MAIZ-P21N NilN.out</filename>
+        <title>24-2011-LINC-MAIZ-P21N NilN</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="VLowN" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/paparoa_silt_loam">
@@ -22322,12 +22229,6 @@ TreatNo = 1</text>
         <operations name="irrig_applic" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/outputfile">
-        <filename output="yes">24-2011-LINC-MAIZ-P21N VLowN.out</filename>
-        <title>24-2011-LINC-MAIZ-P21N VLowN</title>
-        <variables name="My Variables" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/maize">
         <ini shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/maize/ini" />
       </maize>
@@ -22374,6 +22275,12 @@ TreatNo = 2</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">24-2011-LINC-MAIZ-P21N VLowN.out</filename>
+        <title>24-2011-LINC-MAIZ-P21N VLowN</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="LowN" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/paparoa_silt_loam">
@@ -22469,12 +22376,6 @@ TreatNo = 2</text>
         <operations name="irrig_applic" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/outputfile">
-        <filename output="yes">24-2011-LINC-MAIZ-P21N LowN.out</filename>
-        <title>24-2011-LINC-MAIZ-P21N LowN</title>
-        <variables name="My Variables" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/maize">
         <ini shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/maize/ini" />
       </maize>
@@ -22521,6 +22422,12 @@ TreatNo = 3</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">24-2011-LINC-MAIZ-P21N LowN.out</filename>
+        <title>24-2011-LINC-MAIZ-P21N LowN</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="MedN" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/paparoa_silt_loam">
@@ -22616,12 +22523,6 @@ TreatNo = 3</text>
         <operations name="irrig_applic" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/outputfile">
-        <filename output="yes">24-2011-LINC-MAIZ-P21N MedN.out</filename>
-        <title>24-2011-LINC-MAIZ-P21N MedN</title>
-        <variables name="My Variables" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/maize">
         <ini shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/maize/ini" />
       </maize>
@@ -22668,6 +22569,12 @@ TreatNo = 4</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">24-2011-LINC-MAIZ-P21N MedN.out</filename>
+        <title>24-2011-LINC-MAIZ-P21N MedN</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="VHighN" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/paparoa_silt_loam">
@@ -22763,12 +22670,6 @@ TreatNo = 4</text>
         <operations name="irrig_applic" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/outputfile">
-        <filename output="yes">24-2011-LINC-MAIZ-P21N VHighN.out</filename>
-        <title>24-2011-LINC-MAIZ-P21N VHighN</title>
-        <variables name="My Variables" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/maize">
         <ini shortcut="/Simulations/24-2011-LINC-MAIZ-P21N/NilN/maize/ini" />
       </maize>
@@ -22828,6 +22729,12 @@ TreatNo = 5</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">24-2011-LINC-MAIZ-P21N VHighN.out</filename>
+        <title>24-2011-LINC-MAIZ-P21N VHighN</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
   </simulation>
   <simulation name="22-2006-CHER-MAIZ-NITR">
@@ -24003,22 +23910,6 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
           </script>
         </manager>
       </folder>
-      <outputfile>
-        <filename output="yes">22-2006-CHER-MAIZ-NITR VLowN.out</filename>
-        <title>22-2006-CHER-MAIZ-NITR VLowN</title>
-        <variables name="My Variables">
-          <variable>dd/mm/yyyy as Date</variable>
-          <variable>AboveDM</variable>
-          <variable>LeafDM</variable>
-          <variable>StemDM</variable>
-          <variable>lai</variable>
-          <variable>stage_code</variable>
-          <variable>leaf_no</variable>
-        </variables>
-        <events name="My Variables Events">
-          <event>Daily</event>
-        </events>
-      </outputfile>
       <maize>
         <ini>
           <filename input="yes">MaizeValidation.xml</filename>
@@ -24143,6 +24034,12 @@ TreatNo = 1</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">22-2006-CHER-MAIZ-NITR VLowN.out</filename>
+        <title>22-2006-CHER-MAIZ-NITR VLowN</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="LowN" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/paparoa_silt_loam">
@@ -24162,12 +24059,6 @@ TreatNo = 1</text>
         <operations name="irrig_applic" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/outputfile">
-        <filename output="yes">22-2006-CHER-MAIZ-NITR LowN.out</filename>
-        <title>22-2006-CHER-MAIZ-NITR LowN</title>
-        <variables name="My Variables" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/maize">
         <ini shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/maize/ini" />
       </maize>
@@ -24227,6 +24118,12 @@ TreatNo = 2</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">22-2006-CHER-MAIZ-NITR LowN.out</filename>
+        <title>22-2006-CHER-MAIZ-NITR LowN</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="MedN" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/paparoa_silt_loam">
@@ -24324,12 +24221,6 @@ TreatNo = 2</text>
         <operations name="irrig_applic" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/outputfile">
-        <filename output="yes">22-2006-CHER-MAIZ-NITR MedN.out</filename>
-        <title>22-2006-CHER-MAIZ-NITR MedN</title>
-        <variables name="My Variables" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/maize">
         <ini shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/maize/ini" />
       </maize>
@@ -24389,6 +24280,12 @@ TreatNo = 3</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">22-2006-CHER-MAIZ-NITR MedN.out</filename>
+        <title>22-2006-CHER-MAIZ-NITR MedN</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
     <area name="HighN" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN">
       <Soil name="paparoa_silt_loam" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/paparoa_silt_loam">
@@ -24486,12 +24383,6 @@ TreatNo = 3</text>
         <operations name="irrig_applic" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/Manager folder/irrig_applic" />
         <manager name="Report Variables" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/Manager folder/Report Variables" />
       </folder>
-      <outputfile shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/outputfile">
-        <filename output="yes">22-2006-CHER-MAIZ-NITR HighN.out</filename>
-        <title>22-2006-CHER-MAIZ-NITR HighN</title>
-        <variables name="My Variables" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/outputfile/My Variables Events" />
-      </outputfile>
       <maize shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/maize">
         <ini shortcut="/Simulations/22-2006-CHER-MAIZ-NITR/VLowN/maize/ini" />
       </maize>
@@ -24551,6 +24442,12 @@ TreatNo = 4</text>
           <event>end_of_day</event>
         </script>
       </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">22-2006-CHER-MAIZ-NITR HighN.out</filename>
+        <title>22-2006-CHER-MAIZ-NITR HighN</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
     </area>
   </simulation>
 </folder>
