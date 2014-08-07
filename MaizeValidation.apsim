@@ -2443,307 +2443,7 @@ EAH added observed data and filters for all treatment levels, and treatment/vari
       <end_date type="date" description="Enter the end date of the simulation">15/04/2013</end_date>
     </clock>
     <summaryfile />
-    <area name="NilN-DryW" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW">
-      <Soil name="paparoa_silt_loam" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam">
-        <InitialWater name="Initial water" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/Initial water" />
-        <Water shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/Water" />
-        <SoilWater shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/SoilWater" />
-        <SoilOrganicMatter shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/SoilOrganicMatter" />
-        <Analysis shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/Analysis" />
-        <Sample name="Initial nitrogen" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/Initial nitrogen" />
-      </Soil>
-      <irrigation name="Irrigation" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Irrigation" />
-      <surfaceom name="SurfaceOrganicMatter" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SurfaceOrganicMatter" />
-      <fertiliser name="Fertiliser" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Fertiliser" />
-      <folder name="Manager folder" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder">
-        <operations name="sow_harvest" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder/sow_harvest" />
-        <operations name="fertil_applic" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder/fertil_applic" />
-        <operations name="irrig_applic">
-          <operation condition="start_of_day">
-            <date>24/10/2012</date>
-            <action>irrigation apply amount= 16 (mm)</action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>26/10/2012</date>
-            <action>irrigation apply amount= 10 (mm)</action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>3/11/2012</date>
-            <action>irrigation apply amount= 13 (mm)</action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>11/11/2012</date>
-            <action>irrigation apply amount= 19.5 (mm)</action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>15/11/2012</date>
-            <action>irrigation apply amount= 2.7 (mm)</action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>23/11/2012</date>
-            <action>irrigation apply amount= 20 (mm)</action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>29/11/2012</date>
-            <action>irrigation apply amount= 20 (mm)</action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>20/12/2012</date>
-            <action>irrigation apply amount= 4 (mm)</action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>31/01/2013</date>
-            <action>irrigation apply amount= 4.3 (mm)</action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>
-            </date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>
-            </date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>
-            </date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>
-            </date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>
-            </date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>
-            </date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>
-            </date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>
-            </date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>
-            </date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>
-            </date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>
-            </date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>
-            </date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>
-            </date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>
-            </date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>
-            </date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>
-            </date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>
-            </date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>
-            </date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="start_of_day">
-            <date>
-            </date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="end_of_day">
-            <date>17/03/2008</date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="end_of_day">
-            <date>1/09/2009</date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="end_of_day">
-            <date>2/03/2009</date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="end_of_day">
-            <date>8/06/2009</date>
-            <action>
-            </action>
-          </operation>
-          <operation condition="end_of_day">
-            <date>6/10/2009</date>
-            <action>
-            </action>
-          </operation>
-        </operations>
-        <manager name="Report Variables" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder/Report Variables" />
-      </folder>
-      <maize shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/maize">
-        <ini shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/maize/ini" />
-      </maize>
-      <Graph name="Biomass" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Biomass">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Biomass/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Biomass/Simulated/ApsimFileReader" />
-        </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Biomass/Observed">
-          <GDFilter name="Filter">
-            <Filter>NitrogenTreat = ('Nil') and WaterTreat = ('Dry')</Filter>
-            <GDApsimFileReader name="ApsimFileReader">
-              <FileName>23-2012-LINC-MAIZ-RAIN\Obs(BiomassLAI).txt</FileName>
-            </GDApsimFileReader>
-          </GDFilter>
-        </Plot>
-      </Graph>
-      <Graph name="LAI" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LAI">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LAI/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LAI/Simulated/ApsimFileReader" />
-        </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LAI/Observed">
-          <GDFilter name="Filter">
-            <Filter>NitrogenTreat = ('Nil') and WaterTreat = ('Dry')</Filter>
-            <GDApsimFileReader name="ApsimFileReader">
-              <FileName>23-2012-LINC-MAIZ-RAIN\Obs(BiomassLAI).txt</FileName>
-            </GDApsimFileReader>
-          </GDFilter>
-        </Plot>
-      </Graph>
-      <Graph name="LeafNo" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LeafNo">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LeafNo/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LeafNo/Simulated/ApsimFileReader" />
-        </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LeafNo/Observed">
-          <GDFilter name="Filter">
-            <Filter>NitrogenTreat = ('Nil') and WaterTreat = ('Dry')</Filter>
-            <GDApsimFileReader name="ApsimFileReader">
-              <FileName>23-2012-LINC-MAIZ-RAIN\Obs(TipsLigules).txt</FileName>
-            </GDApsimFileReader>
-          </GDFilter>
-        </Plot>
-      </Graph>
-      <Graph name="Phenology" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Phenology">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Phenology/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Phenology/Simulated/ApsimFileReader" />
-        </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Phenology/Observed">
-          <GDFilter name="Filter">
-            <Filter>NitrogenTreat = ('Nil') and WaterTreat = ('Dry')</Filter>
-            <GDApsimFileReader name="ApsimFileReader">
-              <FileName>23-2012-LINC-MAIZ-RAIN\Obs(Emerge).txt</FileName>
-              <FileName>23-2012-LINC-MAIZ-RAIN\Obs(TasselSilk).txt</FileName>
-            </GDApsimFileReader>
-          </GDFilter>
-        </Plot>
-      </Graph>
-      <Graph name="LightInt" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LightInt">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LightInt/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LightInt/Simulated/ApsimFileReader" />
-        </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LightInt/Observed">
-          <GDFilter name="Filter">
-            <Filter>NitrogenTreat = ('Nil') and WaterTreat = ('Dry') </Filter>
-            <GDApsimFileReader name="ApsimFileReader">
-              <FileName>23-2012-LINC-MAIZ-RAIN\Obs(LightInt).txt</FileName>
-            </GDApsimFileReader>
-          </GDFilter>
-        </Plot>
-      </Graph>
-      <Graph name="SoilWater" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SoilWater">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SoilWater/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SoilWater/Simulated/ApsimFileReader" />
-        </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SoilWater/Observed">
-          <GDFilter name="Filter">
-            <Filter>NitrogenTreat = ('Nil') and WaterTreat = ('Dry')</Filter>
-            <GDApsimFileReader name="ApsimFileReader">
-              <FileName>23-2012-LINC-MAIZ-RAIN\Obs(SoilMoisture).txt</FileName>
-            </GDApsimFileReader>
-          </GDFilter>
-        </Plot>
-      </Graph>
-      <manager name="SimCode">
-        <script>
-          <text>ExpNo = 23
-TreatNo = 1</text>
-          <event>init</event>
-        </script>
-        <script>
-          <text>
-          </text>
-          <event>start_of_day</event>
-        </script>
-        <script>
-          <text>
-          </text>
-          <event>end_of_day</event>
-        </script>
-      </manager>
-      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
-        <filename output="yes">23-2012-LINC-MAIZ-RAIN NilN-DryW.out</filename>
-        <title>23-2012-LINC-MAIZ-RAIN NilN-DryW</title>
-        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
-        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
-      </outputfile>
-    </area>
-    <area name="NilN-IrrigFullW">
+    <area name="1_NilN-IrrigFullW">
       <Soil name="paparoa_silt_loam">
         <RecordNumber>0</RecordNumber>
         <SoilType>lignin_FOM</SoilType>
@@ -3931,7 +3631,10 @@ TreatNo = 1</text>
       </maize>
       <Graph name="Biomass">
         <Legend>
-          <CheckedTitles>Simulated, AboveDM,23-2012-LINC-MAIZ-RAIN NilN-DryW</CheckedTitles>
+          <CheckedTitles>Simulated, AboveDM,23-2012-LINC-MAIZ-RAIN MedN-IrrigFullW</CheckedTitles>
+          <CheckedTitles>Simulated, LeafDM,23-2012-LINC-MAIZ-RAIN MedN-IrrigFullW</CheckedTitles>
+          <CheckedTitles>Simulated, StemDM,23-2012-LINC-MAIZ-RAIN MedN-IrrigFullW</CheckedTitles>
+          <CheckedTitles>Simulated, GrainDM,23-2012-LINC-MAIZ-RAIN MedN-IrrigFullW</CheckedTitles>
           <CheckedTitles>Observed, SenesDM,Obs(BiomassLAI)</CheckedTitles>
           <CheckedTitles>Observed, SenesDM,Obs(BiomassLAI)</CheckedTitles>
           <CheckedTitles>Observed, GrainDM,Obs(BiomassLAI)</CheckedTitles>
@@ -4172,6 +3875,306 @@ TreatNo = 1</text>
       <manager name="SimCode">
         <script>
           <text>ExpNo = 23
+TreatNo = 1</text>
+          <event>init</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>start_of_day</event>
+        </script>
+        <script>
+          <text>
+          </text>
+          <event>end_of_day</event>
+        </script>
+      </manager>
+      <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
+        <filename output="yes">23-2012-LINC-MAIZ-RAIN 1_NilN-IrrigFullW.out</filename>
+        <title>23-2012-LINC-MAIZ-RAIN 1_NilN-IrrigFullW</title>
+        <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
+        <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
+      </outputfile>
+    </area>
+    <area name="2_NilN-DryW" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW">
+      <Soil name="paparoa_silt_loam" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam">
+        <InitialWater name="Initial water" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/Initial water" />
+        <Water shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/Water" />
+        <SoilWater shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/SoilWater" />
+        <SoilOrganicMatter shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/SoilOrganicMatter" />
+        <Analysis shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/Analysis" />
+        <Sample name="Initial nitrogen" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/Initial nitrogen" />
+      </Soil>
+      <irrigation name="Irrigation" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Irrigation" />
+      <surfaceom name="SurfaceOrganicMatter" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SurfaceOrganicMatter" />
+      <fertiliser name="Fertiliser" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Fertiliser" />
+      <folder name="Manager folder" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Manager folder">
+        <operations name="sow_harvest" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Manager folder/sow_harvest" />
+        <operations name="fertil_applic" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Manager folder/fertil_applic" />
+        <operations name="irrig_applic">
+          <operation condition="start_of_day">
+            <date>24/10/2012</date>
+            <action>irrigation apply amount= 16 (mm)</action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>26/10/2012</date>
+            <action>irrigation apply amount= 10 (mm)</action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>3/11/2012</date>
+            <action>irrigation apply amount= 13 (mm)</action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>11/11/2012</date>
+            <action>irrigation apply amount= 19.5 (mm)</action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>15/11/2012</date>
+            <action>irrigation apply amount= 2.7 (mm)</action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>23/11/2012</date>
+            <action>irrigation apply amount= 20 (mm)</action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>29/11/2012</date>
+            <action>irrigation apply amount= 20 (mm)</action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>20/12/2012</date>
+            <action>irrigation apply amount= 4 (mm)</action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>31/01/2013</date>
+            <action>irrigation apply amount= 4.3 (mm)</action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>
+            </date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>
+            </date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>
+            </date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>
+            </date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>
+            </date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>
+            </date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>
+            </date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>
+            </date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>
+            </date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>
+            </date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>
+            </date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>
+            </date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>
+            </date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>
+            </date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>
+            </date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>
+            </date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>
+            </date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>
+            </date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="start_of_day">
+            <date>
+            </date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="end_of_day">
+            <date>17/03/2008</date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="end_of_day">
+            <date>1/09/2009</date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="end_of_day">
+            <date>2/03/2009</date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="end_of_day">
+            <date>8/06/2009</date>
+            <action>
+            </action>
+          </operation>
+          <operation condition="end_of_day">
+            <date>6/10/2009</date>
+            <action>
+            </action>
+          </operation>
+        </operations>
+        <manager name="Report Variables" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Manager folder/Report Variables" />
+      </folder>
+      <maize shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/maize">
+        <ini shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/maize/ini" />
+      </maize>
+      <Graph name="Biomass" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Biomass">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Biomass/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Biomass/Simulated/ApsimFileReader" />
+        </Plot>
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Biomass/Observed">
+          <GDFilter name="Filter">
+            <Filter>NitrogenTreat = ('Nil') and WaterTreat = ('Dry')</Filter>
+            <GDApsimFileReader name="ApsimFileReader">
+              <FileName>23-2012-LINC-MAIZ-RAIN\Obs(BiomassLAI).txt</FileName>
+            </GDApsimFileReader>
+          </GDFilter>
+        </Plot>
+      </Graph>
+      <Graph name="LAI" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LAI">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LAI/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LAI/Simulated/ApsimFileReader" />
+        </Plot>
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LAI/Observed">
+          <GDFilter name="Filter">
+            <Filter>NitrogenTreat = ('Nil') and WaterTreat = ('Dry')</Filter>
+            <GDApsimFileReader name="ApsimFileReader">
+              <FileName>23-2012-LINC-MAIZ-RAIN\Obs(BiomassLAI).txt</FileName>
+            </GDApsimFileReader>
+          </GDFilter>
+        </Plot>
+      </Graph>
+      <Graph name="LeafNo" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LeafNo">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LeafNo/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LeafNo/Simulated/ApsimFileReader" />
+        </Plot>
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LeafNo/Observed">
+          <GDFilter name="Filter">
+            <Filter>NitrogenTreat = ('Nil') and WaterTreat = ('Dry')</Filter>
+            <GDApsimFileReader name="ApsimFileReader">
+              <FileName>23-2012-LINC-MAIZ-RAIN\Obs(TipsLigules).txt</FileName>
+            </GDApsimFileReader>
+          </GDFilter>
+        </Plot>
+      </Graph>
+      <Graph name="Phenology" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Phenology">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Phenology/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Phenology/Simulated/ApsimFileReader" />
+        </Plot>
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Phenology/Observed">
+          <GDFilter name="Filter">
+            <Filter>NitrogenTreat = ('Nil') and WaterTreat = ('Dry')</Filter>
+            <GDApsimFileReader name="ApsimFileReader">
+              <FileName>23-2012-LINC-MAIZ-RAIN\Obs(Emerge).txt</FileName>
+              <FileName>23-2012-LINC-MAIZ-RAIN\Obs(TasselSilk).txt</FileName>
+            </GDApsimFileReader>
+          </GDFilter>
+        </Plot>
+      </Graph>
+      <Graph name="LightInt" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LightInt">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LightInt/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LightInt/Simulated/ApsimFileReader" />
+        </Plot>
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LightInt/Observed">
+          <GDFilter name="Filter">
+            <Filter>NitrogenTreat = ('Nil') and WaterTreat = ('Dry') </Filter>
+            <GDApsimFileReader name="ApsimFileReader">
+              <FileName>23-2012-LINC-MAIZ-RAIN\Obs(LightInt).txt</FileName>
+            </GDApsimFileReader>
+          </GDFilter>
+        </Plot>
+      </Graph>
+      <Graph name="SoilWater" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SoilWater">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SoilWater/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SoilWater/Simulated/ApsimFileReader" />
+        </Plot>
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SoilWater/Observed">
+          <GDFilter name="Filter">
+            <Filter>NitrogenTreat = ('Nil') and WaterTreat = ('Dry')</Filter>
+            <GDApsimFileReader name="ApsimFileReader">
+              <FileName>23-2012-LINC-MAIZ-RAIN\Obs(SoilMoisture).txt</FileName>
+            </GDApsimFileReader>
+          </GDFilter>
+        </Plot>
+      </Graph>
+      <manager name="SimCode">
+        <script>
+          <text>ExpNo = 23
 TreatNo = 2</text>
           <event>init</event>
         </script>
@@ -4187,26 +4190,26 @@ TreatNo = 2</text>
         </script>
       </manager>
       <outputfile shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile">
-        <filename output="yes">23-2012-LINC-MAIZ-RAIN NilN-IrrigFullW.out</filename>
-        <title>23-2012-LINC-MAIZ-RAIN NilN-IrrigFullW</title>
+        <filename output="yes">23-2012-LINC-MAIZ-RAIN 2_NilN-DryW.out</filename>
+        <title>23-2012-LINC-MAIZ-RAIN 2_NilN-DryW</title>
         <variables name="My Variables" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables" />
         <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
       </outputfile>
     </area>
-    <area name="VLowN-IrrigFullW" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW">
-      <Soil name="paparoa_silt_loam" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam">
-        <InitialWater name="Initial water" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/Initial water" />
-        <Water shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/Water" />
-        <SoilWater shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/SoilWater" />
-        <SoilOrganicMatter shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/SoilOrganicMatter" />
-        <Analysis shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/Analysis" />
-        <Sample name="Initial nitrogen" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/Initial nitrogen" />
+    <area name="VLowN-IrrigFullW" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW">
+      <Soil name="paparoa_silt_loam" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam">
+        <InitialWater name="Initial water" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/Initial water" />
+        <Water shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/Water" />
+        <SoilWater shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/SoilWater" />
+        <SoilOrganicMatter shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/SoilOrganicMatter" />
+        <Analysis shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/Analysis" />
+        <Sample name="Initial nitrogen" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/Initial nitrogen" />
       </Soil>
-      <irrigation name="Irrigation" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Irrigation" />
-      <surfaceom name="SurfaceOrganicMatter" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SurfaceOrganicMatter" />
-      <fertiliser name="Fertiliser" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Fertiliser" />
-      <folder name="Manager folder" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder">
-        <operations name="sow_harvest" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder/sow_harvest" />
+      <irrigation name="Irrigation" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Irrigation" />
+      <surfaceom name="SurfaceOrganicMatter" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SurfaceOrganicMatter" />
+      <fertiliser name="Fertiliser" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Fertiliser" />
+      <folder name="Manager folder" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Manager folder">
+        <operations name="sow_harvest" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Manager folder/sow_harvest" />
         <operations name="fertil_applic">
           <operation condition="start_of_day">
             <date>15/11/2012</date>
@@ -4284,17 +4287,17 @@ TreatNo = 2</text>
             </action>
           </operation>
         </operations>
-        <operations name="irrig_applic" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder/irrig_applic" />
-        <manager name="Report Variables" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder/Report Variables" />
+        <operations name="irrig_applic" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Manager folder/irrig_applic" />
+        <manager name="Report Variables" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Manager folder/Report Variables" />
       </folder>
-      <maize shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/maize">
-        <ini shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/maize/ini" />
+      <maize shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/maize">
+        <ini shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/maize/ini" />
       </maize>
-      <Graph name="Biomass" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Biomass">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Biomass/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Biomass/Simulated/ApsimFileReader" />
+      <Graph name="Biomass" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Biomass">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Biomass/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Biomass/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Biomass/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Biomass/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('VLow') and WaterTreat = ('IrrigFull')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -4303,11 +4306,11 @@ TreatNo = 2</text>
           </GDFilter>
         </Plot>
       </Graph>
-      <Graph name="LAI" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LAI">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LAI/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LAI/Simulated/ApsimFileReader" />
+      <Graph name="LAI" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LAI">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LAI/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LAI/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LAI/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LAI/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('VLow') and WaterTreat = ('IrrigFull')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -4316,11 +4319,11 @@ TreatNo = 2</text>
           </GDFilter>
         </Plot>
       </Graph>
-      <Graph name="LeafNo" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LeafNo">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LeafNo/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LeafNo/Simulated/ApsimFileReader" />
+      <Graph name="LeafNo" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LeafNo">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LeafNo/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LeafNo/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LeafNo/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LeafNo/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('VLow') and WaterTreat = ('IrrigFull')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -4329,11 +4332,11 @@ TreatNo = 2</text>
           </GDFilter>
         </Plot>
       </Graph>
-      <Graph name="Phenology" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Phenology">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Phenology/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Phenology/Simulated/ApsimFileReader" />
+      <Graph name="Phenology" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Phenology">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Phenology/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Phenology/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Phenology/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Phenology/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('VLow') and WaterTreat = ('IrrigFull')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -4343,11 +4346,11 @@ TreatNo = 2</text>
           </GDFilter>
         </Plot>
       </Graph>
-      <Graph name="LightInt" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LightInt">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LightInt/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LightInt/Simulated/ApsimFileReader" />
+      <Graph name="LightInt" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LightInt">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LightInt/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LightInt/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LightInt/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LightInt/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('VLow') and WaterTreat = ('IrrigFull') </Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -4356,11 +4359,11 @@ TreatNo = 2</text>
           </GDFilter>
         </Plot>
       </Graph>
-      <Graph name="SoilWater" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SoilWater">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SoilWater/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SoilWater/Simulated/ApsimFileReader" />
+      <Graph name="SoilWater" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SoilWater">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SoilWater/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SoilWater/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SoilWater/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SoilWater/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('VLow') and WaterTreat = ('IrrigFull')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -4393,20 +4396,20 @@ TreatNo = 3</text>
         <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
       </outputfile>
     </area>
-    <area name="VLowN-DryW" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW">
-      <Soil name="paparoa_silt_loam" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam">
-        <InitialWater name="Initial water" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/Initial water" />
-        <Water shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/Water" />
-        <SoilWater shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/SoilWater" />
-        <SoilOrganicMatter shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/SoilOrganicMatter" />
-        <Analysis shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/Analysis" />
-        <Sample name="Initial nitrogen" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/Initial nitrogen" />
+    <area name="VLowN-DryW" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW">
+      <Soil name="paparoa_silt_loam" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam">
+        <InitialWater name="Initial water" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/Initial water" />
+        <Water shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/Water" />
+        <SoilWater shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/SoilWater" />
+        <SoilOrganicMatter shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/SoilOrganicMatter" />
+        <Analysis shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/Analysis" />
+        <Sample name="Initial nitrogen" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/Initial nitrogen" />
       </Soil>
-      <irrigation name="Irrigation" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Irrigation" />
-      <surfaceom name="SurfaceOrganicMatter" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SurfaceOrganicMatter" />
-      <fertiliser name="Fertiliser" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Fertiliser" />
-      <folder name="Manager folder" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder">
-        <operations name="sow_harvest" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder/sow_harvest" />
+      <irrigation name="Irrigation" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Irrigation" />
+      <surfaceom name="SurfaceOrganicMatter" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SurfaceOrganicMatter" />
+      <fertiliser name="Fertiliser" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Fertiliser" />
+      <folder name="Manager folder" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Manager folder">
+        <operations name="sow_harvest" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Manager folder/sow_harvest" />
         <operations name="fertil_applic">
           <operation condition="start_of_day">
             <date>15/11/2012</date>
@@ -4661,16 +4664,16 @@ TreatNo = 3</text>
             </action>
           </operation>
         </operations>
-        <manager name="Report Variables" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder/Report Variables" />
+        <manager name="Report Variables" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Manager folder/Report Variables" />
       </folder>
-      <maize shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/maize">
-        <ini shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/maize/ini" />
+      <maize shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/maize">
+        <ini shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/maize/ini" />
       </maize>
-      <Graph name="Biomass" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Biomass">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Biomass/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Biomass/Simulated/ApsimFileReader" />
+      <Graph name="Biomass" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Biomass">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Biomass/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Biomass/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Biomass/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Biomass/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('VLow') and WaterTreat = ('Dry')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -4679,11 +4682,11 @@ TreatNo = 3</text>
           </GDFilter>
         </Plot>
       </Graph>
-      <Graph name="LAI" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LAI">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LAI/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LAI/Simulated/ApsimFileReader" />
+      <Graph name="LAI" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LAI">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LAI/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LAI/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LAI/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LAI/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('VLow') and WaterTreat = ('Dry')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -4692,11 +4695,11 @@ TreatNo = 3</text>
           </GDFilter>
         </Plot>
       </Graph>
-      <Graph name="LeafNo" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LeafNo">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LeafNo/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LeafNo/Simulated/ApsimFileReader" />
+      <Graph name="LeafNo" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LeafNo">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LeafNo/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LeafNo/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LeafNo/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LeafNo/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('VLow') and WaterTreat = ('Dry')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -4705,11 +4708,11 @@ TreatNo = 3</text>
           </GDFilter>
         </Plot>
       </Graph>
-      <Graph name="Phenology" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Phenology">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Phenology/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Phenology/Simulated/ApsimFileReader" />
+      <Graph name="Phenology" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Phenology">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Phenology/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Phenology/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Phenology/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Phenology/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('VLow') and WaterTreat = ('Dry')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -4719,11 +4722,11 @@ TreatNo = 3</text>
           </GDFilter>
         </Plot>
       </Graph>
-      <Graph name="LightInt" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LightInt">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LightInt/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LightInt/Simulated/ApsimFileReader" />
+      <Graph name="LightInt" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LightInt">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LightInt/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LightInt/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LightInt/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LightInt/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('VLow') and WaterTreat = ('Dry')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -4732,11 +4735,11 @@ TreatNo = 3</text>
           </GDFilter>
         </Plot>
       </Graph>
-      <Graph name="SoilWater" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SoilWater">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SoilWater/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SoilWater/Simulated/ApsimFileReader" />
+      <Graph name="SoilWater" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SoilWater">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SoilWater/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SoilWater/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SoilWater/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SoilWater/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('VLow') and WaterTreat = ('Dry')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -4769,20 +4772,20 @@ TreatNo = 4</text>
         <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
       </outputfile>
     </area>
-    <area name="MedN-IrrigFullW" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW">
-      <Soil name="paparoa_silt_loam" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam">
-        <InitialWater name="Initial water" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/Initial water" />
-        <Water shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/Water" />
-        <SoilWater shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/SoilWater" />
-        <SoilOrganicMatter shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/SoilOrganicMatter" />
-        <Analysis shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/Analysis" />
-        <Sample name="Initial nitrogen" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/Initial nitrogen" />
+    <area name="MedN-IrrigFullW" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW">
+      <Soil name="paparoa_silt_loam" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam">
+        <InitialWater name="Initial water" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/Initial water" />
+        <Water shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/Water" />
+        <SoilWater shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/SoilWater" />
+        <SoilOrganicMatter shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/SoilOrganicMatter" />
+        <Analysis shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/Analysis" />
+        <Sample name="Initial nitrogen" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/Initial nitrogen" />
       </Soil>
-      <irrigation name="Irrigation" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Irrigation" />
-      <surfaceom name="SurfaceOrganicMatter" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SurfaceOrganicMatter" />
-      <fertiliser name="Fertiliser" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Fertiliser" />
-      <folder name="Manager folder" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder">
-        <operations name="sow_harvest" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder/sow_harvest" />
+      <irrigation name="Irrigation" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Irrigation" />
+      <surfaceom name="SurfaceOrganicMatter" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SurfaceOrganicMatter" />
+      <fertiliser name="Fertiliser" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Fertiliser" />
+      <folder name="Manager folder" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Manager folder">
+        <operations name="sow_harvest" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Manager folder/sow_harvest" />
         <operations name="fertil_applic">
           <operation condition="start_of_day">
             <date>15/11/2012</date>
@@ -4999,16 +5002,16 @@ TreatNo = 4</text>
             </action>
           </operation>
         </operations>
-        <manager name="Report Variables" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder/Report Variables" />
+        <manager name="Report Variables" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Manager folder/Report Variables" />
       </folder>
-      <maize shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/maize">
-        <ini shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/maize/ini" />
+      <maize shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/maize">
+        <ini shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/maize/ini" />
       </maize>
-      <Graph name="Biomass" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Biomass">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Biomass/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Biomass/Simulated/ApsimFileReader" />
+      <Graph name="Biomass" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Biomass">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Biomass/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Biomass/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Biomass/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Biomass/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('Med') and WaterTreat = ('IrrigFull')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -5017,11 +5020,11 @@ TreatNo = 4</text>
           </GDFilter>
         </Plot>
       </Graph>
-      <Graph name="LAI" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LAI">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LAI/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LAI/Simulated/ApsimFileReader" />
+      <Graph name="LAI" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LAI">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LAI/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LAI/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LAI/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LAI/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('Med') and WaterTreat = ('IrrigFull')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -5030,11 +5033,11 @@ TreatNo = 4</text>
           </GDFilter>
         </Plot>
       </Graph>
-      <Graph name="LeafNo" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LeafNo">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LeafNo/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LeafNo/Simulated/ApsimFileReader" />
+      <Graph name="LeafNo" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LeafNo">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LeafNo/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LeafNo/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LeafNo/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LeafNo/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('Med') and WaterTreat = ('IrrigFull')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -5043,11 +5046,11 @@ TreatNo = 4</text>
           </GDFilter>
         </Plot>
       </Graph>
-      <Graph name="Phenology" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Phenology">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Phenology/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Phenology/Simulated/ApsimFileReader" />
+      <Graph name="Phenology" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Phenology">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Phenology/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Phenology/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Phenology/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Phenology/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('Med') and WaterTreat = ('IrrigFull')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -5057,11 +5060,11 @@ TreatNo = 4</text>
           </GDFilter>
         </Plot>
       </Graph>
-      <Graph name="LightInt" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LightInt">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LightInt/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LightInt/Simulated/ApsimFileReader" />
+      <Graph name="LightInt" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LightInt">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LightInt/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LightInt/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LightInt/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LightInt/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('Med') and WaterTreat = ('IrrigFull')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -5070,11 +5073,11 @@ TreatNo = 4</text>
           </GDFilter>
         </Plot>
       </Graph>
-      <Graph name="SoilWater" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SoilWater">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SoilWater/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SoilWater/Simulated/ApsimFileReader" />
+      <Graph name="SoilWater" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SoilWater">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SoilWater/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SoilWater/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SoilWater/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SoilWater/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('Med') and WaterTreat = ('IrrigFull')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -5107,20 +5110,20 @@ TreatNo = 5</text>
         <events name="My Variables Events" shortcut="/Simulations/01-2010-LINC-MAIZ-MODE/2_MedN/outputfile/My Variables Events" />
       </outputfile>
     </area>
-    <area name="MedN-DryW" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW">
-      <Soil name="paparoa_silt_loam" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam">
-        <InitialWater name="Initial water" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/Initial water" />
-        <Water shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/Water" />
-        <SoilWater shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/SoilWater" />
-        <SoilOrganicMatter shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/SoilOrganicMatter" />
-        <Analysis shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/Analysis" />
-        <Sample name="Initial nitrogen" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/paparoa_silt_loam/Initial nitrogen" />
+    <area name="MedN-DryW" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW">
+      <Soil name="paparoa_silt_loam" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam">
+        <InitialWater name="Initial water" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/Initial water" />
+        <Water shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/Water" />
+        <SoilWater shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/SoilWater" />
+        <SoilOrganicMatter shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/SoilOrganicMatter" />
+        <Analysis shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/Analysis" />
+        <Sample name="Initial nitrogen" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/paparoa_silt_loam/Initial nitrogen" />
       </Soil>
-      <irrigation name="Irrigation" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Irrigation" />
-      <surfaceom name="SurfaceOrganicMatter" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SurfaceOrganicMatter" />
-      <fertiliser name="Fertiliser" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Fertiliser" />
-      <folder name="Manager folder" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder">
-        <operations name="sow_harvest" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder/sow_harvest" />
+      <irrigation name="Irrigation" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Irrigation" />
+      <surfaceom name="SurfaceOrganicMatter" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SurfaceOrganicMatter" />
+      <fertiliser name="Fertiliser" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Fertiliser" />
+      <folder name="Manager folder" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Manager folder">
+        <operations name="sow_harvest" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Manager folder/sow_harvest" />
         <operations name="fertil_applic">
           <operation condition="start_of_day">
             <date>15/11/2012</date>
@@ -5373,16 +5376,16 @@ TreatNo = 5</text>
             </action>
           </operation>
         </operations>
-        <manager name="Report Variables" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Manager folder/Report Variables" />
+        <manager name="Report Variables" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Manager folder/Report Variables" />
       </folder>
-      <maize shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/maize">
-        <ini shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/maize/ini" />
+      <maize shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/maize">
+        <ini shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/maize/ini" />
       </maize>
-      <Graph name="Biomass" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Biomass">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Biomass/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Biomass/Simulated/ApsimFileReader" />
+      <Graph name="Biomass" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Biomass">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Biomass/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Biomass/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Biomass/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Biomass/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('Med') and WaterTreat = ('Dry')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -5391,11 +5394,11 @@ TreatNo = 5</text>
           </GDFilter>
         </Plot>
       </Graph>
-      <Graph name="LAI" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LAI">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LAI/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LAI/Simulated/ApsimFileReader" />
+      <Graph name="LAI" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LAI">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LAI/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LAI/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LAI/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LAI/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('Med') and WaterTreat = ('Dry')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -5404,11 +5407,11 @@ TreatNo = 5</text>
           </GDFilter>
         </Plot>
       </Graph>
-      <Graph name="LeafNo" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LeafNo">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LeafNo/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LeafNo/Simulated/ApsimFileReader" />
+      <Graph name="LeafNo" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LeafNo">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LeafNo/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LeafNo/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LeafNo/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LeafNo/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('Med') and WaterTreat = ('Dry')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -5417,11 +5420,11 @@ TreatNo = 5</text>
           </GDFilter>
         </Plot>
       </Graph>
-      <Graph name="Phenology" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Phenology">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Phenology/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Phenology/Simulated/ApsimFileReader" />
+      <Graph name="Phenology" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Phenology">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Phenology/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Phenology/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/Phenology/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/Phenology/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('Med') and WaterTreat = ('Dry')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -5431,11 +5434,11 @@ TreatNo = 5</text>
           </GDFilter>
         </Plot>
       </Graph>
-      <Graph name="LightInt" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LightInt">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LightInt/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LightInt/Simulated/ApsimFileReader" />
+      <Graph name="LightInt" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LightInt">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LightInt/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LightInt/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/LightInt/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/LightInt/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('Med') and WaterTreat = ('Dry')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
@@ -5444,11 +5447,11 @@ TreatNo = 5</text>
           </GDFilter>
         </Plot>
       </Graph>
-      <Graph name="SoilWater" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SoilWater">
-        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SoilWater/Simulated">
-          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SoilWater/Simulated/ApsimFileReader" />
+      <Graph name="SoilWater" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SoilWater">
+        <Plot name="Simulated" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SoilWater/Simulated">
+          <GDApsimFileReader name="ApsimFileReader" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SoilWater/Simulated/ApsimFileReader" />
         </Plot>
-        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/NilN-IrrigFullW/SoilWater/Observed">
+        <Plot name="Observed" shortcut="/Simulations/23-2012-LINC-MAIZ-RAIN/1_NilN-IrrigFullW/SoilWater/Observed">
           <GDFilter name="Filter">
             <Filter>NitrogenTreat = ('Med') and WaterTreat = ('Dry')</Filter>
             <GDApsimFileReader name="ApsimFileReader">
