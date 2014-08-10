@@ -4,189 +4,130 @@
 # Compare them and do statistics
 
 # Set directory (chosse one option) !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-setwd("C:\\Apsim_dev\\Projects\\CCII\\outFiles\\SowByGenotype\\")
+setwd("C:\\Users\\Ed\\Documents\\LUCI4-MaizeData\\")
+getwd()
 
-# Region by Pixel table
+obsFilePath = "C:\\Users\\Ed\\Documents\\LUCI4-MaizeData\\ObsDataMaize_DB.txt"
+
+# 1 Read simulated and onbserved data
+
+obsData = read.table(obsFilePath, 
+               sep="\t", 
+               header = TRUE)
+# Check obs data
+head(obsData)
+tail(obsData)
+summary(obsData)
+
+obsDataDB = data.frame(obsData)
+head(obsDataDB)
+
+# 2 Bring simulated and observed together
 
 
 
-regionFile = read.csv("C:\\Apsim_dev\\Projects\\CCII\\GIS_layers\\NZ_Regions_GIS\\RegionPerPixel.csv", header=TRUE)
+# 3 Run stats to compare both
 
-head(regionFile)
+# 4 Graph and table of stats 
 
-
-
-# Gets file list
-
+# Read observed data 
 files = list.files(getwd(),pattern='.out', full.names=FALSE) # if true gets path
 
 #Append files into one dataframe
-
-
 
 info = file.info(files)
 
 summary(info)
 
 
+# Loop through all files
+
+fileCount = 0
 
 for (i in 1:length(files)) {
-  
-  
-  
-  if(i<10) {
     
-    thisHeader = read.table(files[i], skip = 2, header = TRUE, comment.char = "(", blank.lines.skip = TRUE) # reads and skips the unit line   
-    
-  }
-  
-  
-  
+  # skip loop if file is empty
   if (file.info(files[i])["size"] == 0) {
     
     print(paste(files[i], " is empty "))
     
     next} 
   
+  fileCount =+ 1
   
-  
-  splitName = unlist(strsplit(files[i],"[_,.]"))
-  
-  
-  
-  r = as.numeric(splitName[1]) # FIXME: see if first number is indeed row
-  
-  c = as.numeric(splitName[2])
-  
-  
-  
+  # Standardise the header column names in the first file
+    thisHeader = read.table(files[i], skip = 2, header = TRUE,
+                            comment.char = "(", 
+                            blank.lines.skip = TRUE) # reads and skips the unit line     
+    outHeader = colnames(thisHeader)
+    
   # read data for that .out file
   
   thisOutFile = read.table(files[i], skip = 4, header = FALSE, blank.lines.skip = TRUE) # reads and skips the unit line
   
+  # Bring the header back
+  colnames(thisOutFile) = outHeader
   
   
-  # From the netCDF metadata (FIXME: should get this from printed field in .out file to minimise risks)
-  
-  # !!!!Atention!!!!! Lat/Long "cannot" be rounded otherwise it creates a mismatch of pixels during rasterisation
-  
-  lat = -34.375-0.050*(r-1)
-  
-  long = 166.425+0.050*(c-1)
-  
-  # FIXME: this is still not ideal as V3 and V4 depend on the arrangment in output, need to address the name and the rounding is not perfect
-  
-  #  if (lat!= min(thisOutFile$V3) | long != min(thisOutFile$V4)) {print(paste(c("Error: Latitude and/or longitude do not match in row/col: ", r, c)))}
-  
-  
-  
-  #colnames(thisOutFile)
-  
-  #  l = length(thisOutFile$Date)
-  
-  l = length(thisOutFile$V1) # fills the variable vector with a no of lines needed
-  
-  fileNo = rep(i, l)
-  
-  thisRow =  rep(r, l)
-  
-  thisCol =  rep(c, l)
-  
-  thisLat = rep(lat, l)
-  
-  thisLong = rep(long, l)
-  
-  #thisSowDate = rep(as.numeric(splitName[3]), l)
-  
-  # thisHybrid = rep(as.numeric(splitName[4]), l)
-  
-  thisHybrid = rep(splitName[3], l)
-  
-  thisSowDate = rep(splitName[4], l)
-  
-  
-  
-  # Get the region for this file FIXME: some pixels are not in the region file (?) so -9999
-  
-  region = NULL
-  
-  region = as.numeric(regionFile$region[regionFile$row == r & regionFile$col == c])
-  
-  if(length(region)==0) region = -9999
-  
-  thisRegion = rep(paste0("R",region), l)
-  
-  
-  
-  thisOutFile = data.frame(fileNo, thisRow, thisCol, thisLat, thisLong, thisRegion, thisHybrid, thisSowDate, thisOutFile)
-  
-  
-  
-  allData2 = rbind(allData2, thisOutFile)
-  
-  
-  
-  if(i == 1 | i %% 1000 == 0 | i == length(files)) {
+  # Creates a allData DF in the first file and appends down after that
+  if (fileCount == 1) { 
+    allData = data.frame(thisOutFile)
+  } else {
+    # Append the file down
+    allData = rbind(allData, thisOutFile)
+  }
+      
+  # Creates temporary CSVs to store data
+  if(i == 1 | i %% 100 == 0 | i == length(files)) {
     
-    print(paste(fileNo[1], " " , Sys.time()))
+    print(paste(fileCount, " " , Sys.time()))
     
-    write.csv(allData2, file = paste("Out_",i,".csv", sep = ""))
+    write.csv(allData, file = paste("Out_",i,".csv", sep = ""))
     
-    allData2 = NULL
+    allData = NULL
     
   }
-  
-  
-  
+    
 }
 
-
-
-firstCols = colnames(thisOutFile) # terieves first columns
-
-#colnames(allData2) = c(firstCols[1:5], colnames(thisHeader))
-
-
-
-head(allData2)
-
-
-
-summary(allData2)
-
-
-
-# Read csvs
+# Read Back CSVs and create a big DF with all simulated data
 
 csv.files = list.files(getwd(),pattern='.csv', full.names=FALSE) # if true gets path
 
 all.the.data <- lapply(csv.files, read.csv, header=TRUE)
 
+SimData <- do.call("rbind", all.the.data)
+
+summary(SimData)
+head(SimData)
+
+save(SimData,file="SimData.Rda")
 
 
-DATA <- do.call("rbind", all.the.data)
+# example of melt function 
+library(reshape)
+simDataDB <- melt(SimData, id=c("X","ExpNo","TreatNo","Date"))
+simDataDB = simDataDB[,!names(simDataDB)== "X"]
+simDataDB$SimValue = as.numeric(simDataDB$SimValue)
+simDataDB$Date = as.character(simDataDB$Date)
+obsDataDB$Date = as.character(obsDataDB$Date)
+colnames(simDataDB)[ncol(simDataDB)] = "SimValue" # change column name to simulated
+colnames(simDataDB)[ncol(simDataDB)-1] = "Variable" # change column name to simulated
+head(simDataDB)
+summary(obsDataDB)
+summary(simDataDB)
 
-summary(DATA)
-
-
-
-colnames(DATA) = c("skip",firstCols[1:8], colnames(thisHeader))
-
-head(DATA)
-
-
-
-save(DATA,file="DATA.Rda")
-
-summary(DATA)
-
-head(DATA)
-
-
-
+# merge with observed data
+obsSimDB <- merge(obsDataDB,simDataDB,by=c("ExpNo","TreatNo", "Date","Variable"))
+head(obsSimDB)
+summary(obsSimDB)
 
 
 # Visualise
+attach(obsSimDB)
+plot (ObsValue,SimValue)
+detach(obsSimDB)
+
 
 DATA_sub = DATA[ which(DATA$CurrentCrop!='wheat_exceed'),]
 
