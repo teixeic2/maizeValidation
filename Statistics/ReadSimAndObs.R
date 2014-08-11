@@ -7,9 +7,9 @@
 setwd("C:\\Users\\Ed\\Documents\\LUCI4-MaizeData\\")
 getwd()
 
-obsFilePath = "C:\\Users\\Ed\\Documents\\LUCI4-MaizeData\\ObsDataMaize_DB.txt"
+obsFilePath = "C:\\Users\\Ed\\Documents\\LUCI4-MaizeData\\obsDataMaize_DB.txt"
 
-# 1 Read simulated and onbserved data
+# 1 Read observed data
 
 obsData = read.table(obsFilePath, 
                sep="\t", 
@@ -19,31 +19,21 @@ head(obsData)
 tail(obsData)
 summary(obsData)
 
+# create a DF from the file
 obsDataDB = data.frame(obsData)
 head(obsDataDB)
+summary(obsDataDB)
 
-# 2 Bring simulated and observed together
+# 2 Read observed data 
 
-
-
-# 3 Run stats to compare both
-
-# 4 Graph and table of stats 
-
-# Read observed data 
+# Find files and inspect files
 files = list.files(getwd(),pattern='.out', full.names=FALSE) # if true gets path
-
-#Append files into one dataframe
-
 info = file.info(files)
-
 summary(info)
 
-
 # Loop through all files
-
+allData = NULL
 fileCount = 0
-
 for (i in 1:length(files)) {
     
   # skip loop if file is empty
@@ -53,7 +43,10 @@ for (i in 1:length(files)) {
     
     next} 
   
-  fileCount =+ 1
+  thisOutFile = NULL
+  
+  fileCount = fileCount + 1 # real number of files
+  print(fileCount)
   
   # Standardise the header column names in the first file
     thisHeader = read.table(files[i], skip = 2, header = TRUE,
@@ -62,71 +55,75 @@ for (i in 1:length(files)) {
     outHeader = colnames(thisHeader)
     
   # read data for that .out file
-  
-  thisOutFile = read.table(files[i], skip = 4, header = FALSE, blank.lines.skip = TRUE) # reads and skips the unit line
+    thisOutFile = read.table(files[i], skip = 4, header = FALSE, blank.lines.skip = TRUE) # reads and skips the unit line
   
   # Bring the header back
   colnames(thisOutFile) = outHeader
-  
   
   # Creates a allData DF in the first file and appends down after that
   if (fileCount == 1) { 
     allData = data.frame(thisOutFile)
   } else {
-    # Append the file down
     allData = rbind(allData, thisOutFile)
   }
       
   # Creates temporary CSVs to store data
-  if(i == 1 | i %% 100 == 0 | i == length(files)) {
-    
+  if(i == 1 | i %% 100 == 0 | i == length(files)) {  
     print(paste(fileCount, " " , Sys.time()))
-    
     write.csv(allData, file = paste("Out_",i,".csv", sep = ""))
     
-    allData = NULL
-    
   }
-    
 }
 
-# Read Back CSVs and create a big DF with all simulated data
-
+# Read Back all CSVs and create a big DF with all simulated data
 csv.files = list.files(getwd(),pattern='.csv', full.names=FALSE) # if true gets path
-
 all.the.data <- lapply(csv.files, read.csv, header=TRUE)
+simData <- do.call("rbind", all.the.data)
 
-SimData <- do.call("rbind", all.the.data)
+# inspect simulated data
+summary(simData)
+head(simData)
+tail(simData)
+save(simData,file="simData.Rda")
 
-summary(SimData)
-head(SimData)
 
-save(SimData,file="SimData.Rda")
-
+# 3 Look up and merge simulated and observed data
 
 # example of melt function 
 library(reshape)
-simDataDB <- melt(SimData, id=c("X","ExpNo","TreatNo","Date"))
-simDataDB = simDataDB[,!names(simDataDB)== "X"]
-simDataDB$SimValue = as.numeric(simDataDB$SimValue)
-simDataDB$Date = as.character(simDataDB$Date)
-obsDataDB$Date = as.character(obsDataDB$Date)
-colnames(simDataDB)[ncol(simDataDB)] = "SimValue" # change column name to simulated
+simDataDB = melt(simData, id=c("X","ExpNo","TreatNo","Date"))
+head(simDataDB)
+summary(simDataDB)
+colnames(simDataDB)[ncol(simDataDB)] = "simValue" # change column name to simulated
 colnames(simDataDB)[ncol(simDataDB)-1] = "Variable" # change column name to simulated
 head(simDataDB)
-summary(obsDataDB)
+simDataDB = simDataDB[,!names(simDataDB)== "X"]
 summary(simDataDB)
+summary(obsDataDB)
+head(obsDataDB)
+
+
 
 # merge with observed data
-obsSimDB <- merge(obsDataDB,simDataDB,by=c("ExpNo","TreatNo", "Date","Variable"))
+obsSimDB = NULL
+obsSimDB <- merge(simDataDB,obsDataDB,by=c("ExpNo","TreatNo", "Date","Variable"))
 head(obsSimDB)
 summary(obsSimDB)
+obsSimDB[is.na(obsSimDB)] <- 0
+write.table(obsSimDB, file = paste0("TestDB.txt"))
 
 
-# Visualise
-attach(obsSimDB)
-plot (ObsValue,SimValue)
-detach(obsSimDB)
+plot (obsSimDB$simValue,obsSimDB$obsValue)
+length(obsSimDB$Value)
+
+
+
+
+
+
+
+
+
 
 
 DATA_sub = DATA[ which(DATA$CurrentCrop!='wheat_exceed'),]
