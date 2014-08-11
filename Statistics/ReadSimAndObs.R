@@ -84,7 +84,7 @@ simData <- do.call("rbind", all.the.data)
 summary(simData)
 head(simData)
 tail(simData)
-save(simData,file="simData.Rda")
+write.table(simData, file = paste0("simData.txt"))
 
 
 # 3 Look up and merge simulated and observed data
@@ -110,16 +110,42 @@ obsSimDB <- merge(simDataDB,obsDataDB,by=c("ExpNo","TreatNo", "Date","Variable")
 head(obsSimDB)
 summary(obsSimDB)
 obsSimDB[is.na(obsSimDB)] <- 0
-write.table(obsSimDB, file = paste0("TestDB.txt"))
+write.table(obsSimDB, file = paste0("obsSimDB.txt"))
 
 
 plot (obsSimDB$simValue,obsSimDB$obsValue)
 length(obsSimDB$Value)
 
 
+exps = unique(obsSimDB$ExpNo)
 
+treats = unique(obsSimDB$TreatNo)
 
-
+vars = unique(obsSimDB$Variable)
+par(mfrow=c(2,3))
+for(e in 1:length(exps)){
+  for(t in 1:length(treats)){
+    for(v in 1:length(vars)){
+    #print(paste0(exps[e], treats[t], vars[v]))
+    DFsub = NULL
+    DFsub = obsSimDB[which (obsSimDB$Variable == vars[v] 
+                            & obsSimDB$TreatNo == treats[t] 
+                            & obsSimDB$ExpNo == exps[e]),]
+    
+    if(length(DFsub$simValue) ==0 | length(DFsub$obsValue)==0){
+      next
+    } else {
+      sx = max(DFsub$obsValue)
+      sn = max(DFsub$simValue)
+      ox = min(DFsub$obsValue)
+      on =min(DFsub$simValue)
+      plot(DFsub$simValue,DFsub$obsValue, 
+           main = paste0(as.character(vars[v]),
+                         " E",exps[e]," T",treats[t]))  
+     }
+    }
+  }
+}
 
 
 
