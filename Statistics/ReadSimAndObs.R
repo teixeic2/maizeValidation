@@ -2,6 +2,8 @@
 # Reads observed data
 # Reads simulated data
 # Compare them and do statistics
+library (hydroGOF)
+library(xtable)
 
 # Set directory (chosse one option) !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 setwd("C:\\Users\\Ed\\Documents\\LUCI4-MaizeData\\")
@@ -127,26 +129,49 @@ vars = unique(obsSimDB$Variable)
 
 par(mfrow=c(2,3))
 
+
+FinalDF = NULL
 for(e in 1:length(exps)){
   for(t in 1:length(treats)){
     for(v in 1:length(vars)){
+      OutDF = NULL
     #print(paste0(exps[e], treats[t], vars[v]))
     DFsub = NULL
     DFsub = obsSimDB[which (obsSimDB$Variable == vars[v] 
                             & obsSimDB$TreatNo == treats[t] 
                             & obsSimDB$ExpNo == exps[e]),]
+    thisLabel = paste0(as.character(vars[v]),
+           " E",exps[e]," T",treats[t], ": ")
     
     if(length(DFsub$simValue) == 0 | length(DFsub$obsValue)==0){
       next
     } else {
-      plot(DFsub$simValue,DFsub$obsValue, 
-           main = paste0(as.character(vars[v]),
-                         " E",exps[e]," T",treats[t]))  
+      plot(DFsub$simValue,DFsub$obsValue, main = thisLabel)       
+      
+      thisRMSD = round(rmse(DFsub$simValue, DFsub$obsValue, na.rm = TRUE))
+      
+      thisRMSDMean = round((thisRMSD / mean(DFsub$obsValue)) * 100, digits = 1)
+      
+      thisR2 = round(br2(DFsub$simValue, DFsub$obsValue, na.rm = TRUE) * 100, digits = 1)
+      
+      print(paste0(thisLabel, "", thisRMSD))
+      
+      OutDf = data.frame(exp = exps[e], treat = treats[t], var = vars[v],
+                         RMSD = thisRMSD, RMSD_mean = thisRMSDMean,
+                         R2 = thisR2
+                         )
+      FinalDF = rbind(FinalDF, OutDf)
+            
      }
     }
   }
 }
 
+write.table(FinalDF, file = "StatsTable.txt")
+
+s.table = xtable(FinalDF)                
+
+print(s.table, type = "html")
 
 
 
